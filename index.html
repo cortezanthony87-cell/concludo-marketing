@@ -58,7 +58,7 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backgroun
 .nav-in{display:flex;align-items:center;gap:16px;padding-block:11px}
 .brand{display:flex;align-items:center;gap:9px;text-decoration:none;flex:0 0 auto}
 .brand img{width:28px;height:auto}
-.brand span{font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-.03em;color:var(--ink)}
+.brand-txt{display:flex;flex-direction:column;line-height:1.1}.brand-txt small{font-family:var(--font-body,Inter,sans-serif);font-weight:500;font-size:10.5px;letter-spacing:.01em;color:#16263F;background:#E2B53C;border-radius:4px;padding:2px 6px;margin-top:4px;white-space:nowrap;align-self:flex-start}@media(max-width:380px){.brand-txt small{display:none}}@media(min-width:900px){header.nav .nav-links a{padding:10px 8px;font-size:14.5px;white-space:nowrap}header.nav .nav-links{gap:0;flex-wrap:nowrap}header.nav a.nav-cta{white-space:nowrap}}@media(min-width:900px) and (max-width:1240px){.brand-txt small{font-size:9.5px;max-width:150px;white-space:normal;line-height:1.15}}.brand span{font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-.03em;color:var(--ink)}
 .nav-links{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
 .nav-links a{font-size:15px;font-weight:500;color:var(--slate);text-decoration:none;padding:10px 13px;
   border-radius:8px;min-height:44px;display:inline-flex;align-items:center}
@@ -506,11 +506,12 @@ footer>.wrap{padding-block:50px}
   <div class="wrap nav-in">
     <a class="brand" href="#home" data-nav="home">
       <img src="img/mark.webp" alt="" width="28" height="31">
-      <span>Concludo</span>
+      <span class="brand-txt"><span>Concludo</span><small>Turn every conversation into finished work.</small></span>
     </a>
     <nav class="nav-links" aria-label="Main">
       <a href="#home" data-nav="home">Home</a>
       <a href="#workspace" data-nav="workspace">Workspace</a>
+      <a href="#meeting-output" data-nav="meeting-output">Meeting output</a>
       <a href="#agents" data-nav="agents">AI agents</a>
       <a href="#workflows" data-nav="workflows">Workflows</a>
       <a href="#workbook" data-nav="workbook">Workbook</a>
@@ -659,7 +660,7 @@ footer>.wrap{padding-block:50px}
             <img src="img/shot-output.webp" alt="The Outputs tab of a meeting output for a fictional client, showing four outputs built from the approved record: the meeting output document, a follow-up email with two drafts waiting for approval, a client deck and an action timeline, plus counts of three decisions, five actions, two open questions, two risks and the next meeting date." width="1600" height="1000" loading="eager">
             <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
           </figure>
-          <div class="note" style="margin-top:22px"><p><strong>Nothing is final until you say so.</strong> Concludo drafts the record and every item waits for you to confirm it, one at a time. An action with no date is shown as a gap, not given one, and a remark marked private in the meeting is left out of every output. The email, deck and timeline are only built after the record is approved.</p></div>
+          <div class="note" style="margin-top:22px"><p><strong>Nothing is final until you say so.</strong> Concludo drafts the record and every item waits for you to confirm it, one at a time. An action with no date is shown as a gap, not given one, and a remark marked private in the meeting is left out of every output. The email, deck and timeline are only built after the record is approved.</p><div class="btns" style="margin-top:14px"><a class="btn btn-line btn-sm" href="#meeting-output" data-nav="meeting-output">See the full meeting output</a></div></div>
         </div>
       </div>
     </div>
@@ -1279,6 +1280,96 @@ footer>.wrap{padding-block:50px}
 </div>
 
 <!-- ============================= AGENTS ============================= -->
+<div class="page" id="page-meeting-output" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">Meeting output</span>
+      <h1 style="max-width:18ch">One meeting in. Finished work out.</h1>
+      <p class="lede" style="margin-top:20px">Paste a transcript. Check every item against what was actually said. Approve the record. Concludo then drafts the document, the follow-up email, the client deck and the action timeline from that one approved record.</p>
+      <div class="btns"><a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a><a class="btn btn-line" href="#workspace" data-nav="workspace">See the whole Workspace</a></div>
+      <p class="fine" style="margin-top:18px">Every screen on this page is a design preview with sample data for fictional organisations. The meeting output pages are in build. They are not open for sale.</p>
+    </div>
+  </section>
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:44px"><span class="kicker">The whole path</span><h2>Five steps, and the person stays in charge of every one</h2><p class="lede" style="margin-top:16px">Nothing moves to the next step until you have checked it.</p></div><div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr))"><div class="tile"><div class="num">STEP 1</div><h3>Add the source</h3><p>Paste, upload or type. Concludo does not join or record meetings.</p></div><div class="tile"><div class="num">STEP 2</div><h3>Review</h3><p>Confirm each decision, action, question and risk against its source line.</p></div><div class="tile"><div class="num">STEP 3</div><h3>Record</h3><p>The approved record, as a document you can download.</p></div><div class="tile"><div class="num">STEP 4</div><h3>Outputs</h3><p>Email, deck and timeline, built only from the approved record.</p></div><div class="tile"><div class="num">STEP 5</div><h3>History</h3><p>Who confirmed, edited and approved what, and when.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block"><div class="block-txt"><span class="kicker">Step 1: Add the source</span><h2 style="font-size:clamp(25px,3vw,34px)">Say what the meeting was, then paste what was said</h2><p class="muted">Add the meeting, project, date and audience, and the panel beside it shows exactly what will be drafted before you start. Everyone in the meeting must have been told it was being transcribed, and a remark flagged as private is left out of every output.</p><ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Paste a transcript, upload a text, Word or caption file, or type notes</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Works with transcripts exported from any recorder app, smart pen or meeting platform</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The meeting output document is on every plan. The other three outputs are Pro and above</li></ul></div><figure class="window" style="margin:0;"><img src="img/shot-meeting-input.webp" alt="The Add the source screen of a new meeting output, with paste transcript, upload a file and typed notes, meeting details, a sample transcript and a panel listing what Concludo will draft." width="1600" height="1000" loading="lazy"><div class="window-foot">Design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="block rev"><div class="block-txt"><span class="kicker">Step 2: Review</span><h2 style="font-size:clamp(25px,3vw,34px)">Check every item against the words that were said</h2><p class="muted">Decisions, actions, open questions and risks are listed with the transcript lines behind them. You confirm each, edit it, or leave it as a gap. If someone said "later this week", Concludo will not turn that into a date.</p><ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Progress shows as items confirmed out of items found</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Undated actions are carried as "Date to be agreed"</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Private remarks are struck through and excluded from everything</li></ul></div><figure class="window" style="margin:0;"><img src="img/shot-mo-review.webp" alt="The Review tab showing eleven of twelve items confirmed, each with Confirm and Edit buttons, and a side panel quoting the transcript lines behind an undated action, saying Concludo will not guess a date." width="1600" height="1000" loading="lazy"><div class="window-foot">Design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block"><div class="block-txt"><span class="kicker">Step 3: Record</span><h2 style="font-size:clamp(25px,3vw,34px)">The approved record, as a document</h2><p class="muted">The record becomes a document with the summary, decision log, action register and evidence. Each item links back to its transcript line, and no date is printed that was not said in the meeting.</p><ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Download as PDF or Word, or save to the project</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Version, approver, approval time and audience are on the record</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Every other output is built from this record and nothing else</li></ul></div><figure class="window" style="margin:0;"><img src="img/shot-mo-record.webp" alt="The Record tab showing a three page record document preview with version, approval, audience and page details, three checks, and download buttons." width="1600" height="1000" loading="lazy"><div class="window-foot">Design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-wash">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:44px"><span class="kicker">The full report</span><h2>The whole meeting, in one file</h2><p class="lede" style="margin-top:16px">This is the intended shape of a full meeting record pack: a board briefing, an executive summary, an action plan, a decision pack, an action timeline and a client presentation, each with the evidence behind it.</p></div><div style="max-width:980px;margin-inline:auto"><figure class="window" style="margin:0;"><img src="img/mo-record-pack.webp" alt="A 22 page sample meeting record pack on one sheet, with a cover and contents, a board briefing with decisions, action plan, risks and evidence appendix, an executive summary, an action plan, a decision pack, an action timeline and a client presentation." width="1800" height="1680" loading="lazy"><div class="window-foot">Sample record pack, 22 pages. Design preview. Sample data for a fictional organisation, not live.</div></figure></div><ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Every decision and action carries its source line, so a reader can check it</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Gaps are shown as gaps: no owner named, no date stated, date to be agreed</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A record quality panel measures the record, not the people in the meeting. No individual is scored or ranked</li></ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:44px"><span class="kicker">Outputs</span><h2>Four outputs from one approved record</h2><p class="lede" style="margin-top:16px">The meeting output document is on every plan. The follow-up email, client deck and action timeline are drafted for Pro and above, and nothing is shared or sent until a person approves it.</p></div><div style="max-width:980px;margin-inline:auto"><figure class="window" style="margin:0;"><img src="img/shot-output.webp" alt="The Outputs tab showing four outputs built from the approved record: the meeting output document, a follow-up email, a client deck and an action timeline." width="1600" height="1000" loading="lazy"><div class="window-foot">Design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:44px"><span class="kicker">Follow-up email</span><h2>A client version and an internal version, side by side</h2><p class="lede" style="margin-top:16px">One email goes to the client and one stays with your team. The client version leaves internal risks out. The internal version includes them and says it is not for the client.</p></div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;align-items:start"><figure class="window" style="margin:0;"><img src="img/shot-mo-email.webp" alt="The client version of a follow-up email drafted from the approved record, with decisions, actions and open items, pre-approval checks, tone choices and Approve and Edit draft buttons." width="1600" height="1000" loading="lazy"><div class="window-foot">Client version. Design preview. Sample data for a fictional organisation, not live.</div></figure><figure class="window" style="margin:0;"><img src="img/shot-mo-email-internal.webp" alt="The internal version of the follow-up email for the project team, including risks and the actions the team owns, with checks that it is for internal use only, tone choices and Approve and Edit draft buttons." width="1600" height="1000" loading="lazy"><div class="window-foot">Internal version. Design preview. Sample data for a fictional organisation, not live.</div></figure></div><div style="margin-top:28px"><ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Checked before you approve: the right risks included or left out, the private remark withheld, every date matching the approved record</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Tone choices of professional, warm or brief, and an Edit draft button</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>After you approve, copy it or open it in your own email app. Concludo does not send it for you</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block rev"><div class="block-txt"><span class="kicker">What lands in the inbox</span><h2 style="font-size:clamp(25px,3vw,34px)">Decisions, owners and dates in a table the reader can act on</h2><p class="muted">The drafted body carries the context, each decision with who made it, a table of actions with owner and due date, the deadlines, the open questions and the next meeting. A date that was approximate in the meeting is labelled approximate, and a missing one reads "Date to be agreed".</p><ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Every action has an ID, so replies can refer to A07 rather than describe it</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Open questions are listed with who will check them, or "Owner to be agreed"</li></ul></div><figure class="window" style="margin:0;max-width:520px;margin-inline:auto"><img src="img/mo-email-body.webp" alt="A drafted follow-up email body for a leadership meeting, with context, four decisions, a table of nine actions with owner and due date, deadlines, four open questions and next meeting, where unconfirmed dates are shown as approximate or as date to be agreed." width="1100" height="1948" loading="lazy"><div class="window-foot">Drafted email body. Design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:44px"><span class="kicker">Client deck and action timeline</span><h2>The meeting, ready to present and ready to track</h2><p class="lede" style="margin-top:16px">The client deck is a branded presentation of the approved record. The action timeline puts every dated action on one road, by owner and by week, and says plainly which ones are overdue or still have no date.</p></div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;align-items:start"><figure class="window" style="margin:0;"><img src="img/shot-mo-deck.webp" alt="The client deck output, a six slide branded presentation drafted from the approved record, with a slide strip, checks and download buttons." width="1600" height="1000" loading="lazy"><div class="window-foot">Client deck. Design preview. Sample data for a fictional organisation, not live.</div></figure><figure class="window" style="margin:0;"><img src="img/shot-mo-timeline.webp" alt="The action timeline output, a six slide visual of every dated action in the meeting, with checks and a Generate timeline button." width="1600" height="1000" loading="lazy"><div class="window-foot">Action timeline. Design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px"><figure class="window" style="margin:0;"><img src="img/mo-tl-cover.webp" alt="Cover slide of an action timeline for a fictional group, showing counts of eight upcoming, one due today, two overdue, two with the date to be agreed and three completed, out of sixteen actions, on a road graphic." width="1600" height="899" loading="lazy"><div class="window-foot">Timeline slide 1. Design preview. Sample data for a fictional organisation, not live.</div></figure><figure class="window" style="margin:0;"><img src="img/mo-tl-weeks.webp" alt="A week by week slide showing who is doing what and when, with each owner in a row, actions as coloured cards by status, and a marker for today." width="1600" height="899" loading="lazy"><div class="window-foot">Timeline slide 3. Design preview. Sample data for a fictional organisation, not live.</div></figure><figure class="window" style="margin:0;"><img src="img/mo-tl-attention.webp" alt="A needs attention slide listing two overdue actions and two actions with no date yet, each with a next step." width="1600" height="899" loading="lazy"><div class="window-foot">Timeline slide 5. Design preview. Sample data for a fictional organisation, not live.</div></figure></div><ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Six slides: cover, the road ahead, week by week, by horizon, needs attention and next steps</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Built only when the meeting has enough dated actions</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Downloads as an editable PowerPoint, so you can adjust it before it goes anywhere</li></ul>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="block rev"><div class="block-txt"><span class="kicker">Plans</span><h2 style="font-size:clamp(25px,3vw,34px)">What each plan includes</h2><p class="muted">On the Starter subscription the meeting output document is included, and the other three outputs show as included in the Pro plan. The plan view makes the difference visible before anyone upgrades.</p><ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Meeting output document: every plan</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Follow-up email, client deck and action timeline: Pro and above</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Plans and prices are indicative until validated with buyers</li></ul></div><figure class="window" style="margin:0;"><img src="img/shot-mo-starter.webp" alt="The Starter plan view of the Outputs tab, with the meeting output document available and the other three outputs marked as included in the Pro plan." width="1600" height="1000" loading="lazy"><div class="window-foot">Design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-ink">
+    <div class="wrap">
+      <div class="center"><span class="kicker">The guardrails</span><h2 style="color:#fff">What it will not do</h2></div><div class="tiles" style="margin-top:34px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))"><div class="tile"><h3>Guess a date or an owner</h3><p>If it was not said, it shows as a gap for you to fill.</p></div><div class="tile"><h3>Send anything</h3><p>Nothing is shared or sent until a person approves it.</p></div><div class="tile"><h3>Use a private remark</h3><p>Anything flagged as private is withheld from every output and the record says it was withheld.</p></div><div class="tile"><h3>Score or rank a person</h3><p>The record is measured, never the people in it.</p></div><div class="tile"><h3>Join or record your meeting</h3><p>You bring the transcript from the tool you already use.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="note" style="max-width:940px;margin-inline:auto"><p><strong>Where this stands.</strong> The Workspace is built and partly working. It is not open for sale, and drafting is rule-based today, with no language model called yet. The follow-up email, client deck, action timeline and full record pack are designed and shown as previews. They are not built yet. The sample meetings belong to fictional organisations, and nothing here is a record of anyone's results. All prices are indicative.</p></div>
+    </div>
+  </section>
+
+</div>
+
 <div class="page" id="page-agents" hidden>
   <section class="hero">
     <div class="wrap">
@@ -2241,6 +2332,7 @@ footer>.wrap{padding-block:50px}
         <h4>Product</h4>
         <ul>
           <li><a href="#workspace" data-nav="workspace">The Workspace</a></li>
+          <li><a href="#meeting-output" data-nav="meeting-output">Meeting output</a></li>
           <li><a href="#agents" data-nav="agents">AI agents</a></li>
           <li><a href="#workflows" data-nav="workflows">Workflow builder</a></li>
           <li><a href="#pricing" data-nav="pricing">Pricing</a></li>
@@ -2285,9 +2377,9 @@ footer>.wrap{padding-block:50px}
 
 <script>
 (function(){
-  var PAGES=['home','workspace','agents','workflows','workbook','wb-starter','wb-standard','wb-pro',
+  var PAGES=['home','workspace','meeting-output','agents','workflows','workbook','wb-starter','wb-standard','wb-pro',
     'tools','pricing','about'];
-  var TITLES={home:'Concludo',workspace:'Concludo Workspace',agents:'Concludo AI agents',
+  var TITLES={home:'Concludo',workspace:'Concludo Workspace','meeting-output':'Concludo meeting output',agents:'Concludo AI agents',
     workflows:'Concludo workflow builder',
     workbook:'Meeting Mastery Workbook',
     'wb-starter':'Meeting Starter Kit',
