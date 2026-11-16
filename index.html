@@ -1,19 +1,6 @@
 <!doctype html>
-<html lang="en-AU">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Concludo, turn every conversation into action</title>
-<meta name="description" content="Paste a transcript from any recorder, pen or meeting platform. Concludo drafts the summary, action items, follow-up email, decision log, action plan and branded deck, and waits for you to approve it.">
-<link rel="canonical" href="https://www.concludo.au/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Concludo">
-<meta property="og:title" content="Concludo, turn every conversation into action">
-<meta property="og:description" content="Paste a transcript from any recorder, pen or meeting platform. Concludo drafts the summary, action items, follow-up email, decision log, action plan and branded deck, and waits for you to approve it.">
-<meta property="og:url" content="https://www.concludo.au/">
-<meta property="og:locale" content="en_AU">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/img/mark.webp" type="image/webp">
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Concludo</title>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -392,7 +379,7 @@ footer>.wrap{padding-block:50px}
   font-weight:700;letter-spacing:.09em;text-transform:uppercase}
 .lane-head .cm{margin-left:auto;font-size:14.5px;color:var(--slate)}
 @media (max-width:700px){.lane-head .cm{margin-left:0;width:100%}}
-.agrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.agrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}.agrid.three{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:980px){.agrid.three{grid-template-columns:1fr}}
 @media (max-width:860px){.agrid{grid-template-columns:minmax(0,1fr)}}
 .agent{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px;
   box-shadow:var(--shadow-sm);min-width:0;display:flex;flex-direction:column}
@@ -513,31 +500,34 @@ footer>.wrap{padding-block:50px}
 .center .lede{margin-inline:auto}
 .center .btns{justify-content:center}
 </style>
-</head>
-<body>
+</head><body>
+
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="/">
-      <img src="/img/mark.webp" alt="" width="28" height="31">
+    <a class="brand" href="#home" data-nav="home">
+      <img src="img/mark.webp" alt="" width="28" height="31">
       <span>Concludo</span>
     </a>
     <nav class="nav-links" aria-label="Main">
-      <a href="/" aria-current="page">Home</a>
-      <a href="/workspace/">Workspace</a>
-      <a href="/ai-agents/">AI agents</a>
-      <a href="/workflow-builder/">Workflows</a>
-      <a href="/meeting-mastery-workbook/">Workbook</a>
-      <a href="/free-tools/">Free tools</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/about/">About</a>
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#workspace" data-nav="workspace">Workspace</a>
+      <a href="#agents" data-nav="agents">AI agents</a>
+      <a href="#workflows" data-nav="workflows">Workflows</a>
+      <a href="#workbook" data-nav="workbook">Workbook</a>
+      <a href="#tools" data-nav="tools">Free tools</a>
+      <a href="#pricing" data-nav="pricing">Pricing</a>
+      <a href="#about" data-nav="about">About</a>
     </nav>
-    <a class="btn btn-gold btn-sm nav-cta" href="https://app.concludo.com.au/integrations" target="_blank" rel="noopener noreferrer">Open Workspace Connection</a>
+    <a class="btn btn-gold btn-sm nav-cta" href="#tools" data-nav="tools">Try the free tools</a>
   </div>
 </header>
 
-
 <main id="main">
-<section class="hero">
+
+<!-- ============================= HOME ============================= -->
+<div class="page" id="page-home">
+
+  <section class="hero">
     <div class="wrap">
       <div class="hero-grid">
         <div>
@@ -545,8 +535,8 @@ footer>.wrap{padding-block:50px}
           <h1>Turn every conversation into <span class="mark">finished work.</span></h1>
           <p class="lede">Bring a transcript, notes or any source material. Concludo returns the summary, the decision log, the action items with owners and the action plan, ready for you to review, change and send. Nothing leaves until a person approves it.</p>
           <div class="btns">
-            <a class="btn btn-primary" href="https://app.concludo.com.au/integrations" target="_blank" rel="noopener noreferrer">Open Workspace Connection</a>
-            <a class="btn btn-line" href="/free-tools/">Try a free tool first</a>
+            <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
+            <a class="btn btn-line" href="#tools" data-nav="tools">Try a free tool first</a>
           </div>
           <p class="fine" style="margin-top:22px;max-width:48ch">No bot joins your call. Concludo does not record, join or transcribe meetings, so there is nothing new in the room and nothing to install.</p>
         </div>
@@ -616,7 +606,7 @@ footer>.wrap{padding-block:50px}
         <div class="tile"><div class="num">05</div><h3>Decision log</h3><p>What was decided, by whom, and on what condition. The record that settles arguments.</p></div>
         <div class="tile"><div class="num">04</div><h3>Action plan</h3><p>The sequence, the owners and the dependencies, ready to hand to the team.</p></div>
         <div class="tile"><div class="num">05</div><h3>Decision memory</h3><p>Searchable across every meeting, so what was decided in March is findable in August.</p></div>
-        <div class="tile" style="background:var(--mist);border-style:dashed"><div class="num">NOT YET</div><h3>Branded deck and drafted email</h3><p>PowerPoint export and automatic follow-up drafting are not built. They are named here because they are coming, not because they work.</p></div>
+        <div class="tile" style="background:var(--mist);border-style:dashed"><div class="num">DESIGNED, IN BUILD</div><h3>Follow-up email, client deck and action timeline</h3><p>Shown below as design previews, for Pro and above. They are not built yet, and nothing is sent until a person approves it.</p></div>
         <div class="tile" style="background:var(--ink)">
           <div class="num" style="color:#9FB0C9">AND THEN</div>
           <h3 style="color:#fff">You approve it</h3>
@@ -638,40 +628,79 @@ footer>.wrap{padding-block:50px}
         <div class="mcard">
           <div class="mcard-top">
             <div class="who">The meeting that took place</div>
-            <h3>Westgate Station opening, communications review</h3>
+            <h3>Scope v3 and delivery plan review</h3>
           </div>
           <dl>
-            <dt>Client</dt><dd>Northline Metro, rail operator</dd>
-            <dt>When</dt><dd>Monday 19 October 2026, 10:00 to 11:30 AEDT</dd>
-            <dt>Who</dt><dd>Six people, two organisations</dd>
-            <dt>Captured on</dt><dd>A phone recording, transcribed by the tool they already use</dd>
-            <dt>Pasted in</dt><dd>11:34, four minutes after it finished</dd>
+            <dt>Client</dt><dd>Harborview Developments (fictional)</dd>
+            <dt>When</dt><dd>Monday 16 November 2026, 2:00 to 2:45 pm AEDT</dd>
+            <dt>Who</dt><dd>Three people, two organisations</dd>
+            <dt>Captured on</dt><dd>A video call, exported as a transcript</dd>
+            <dt>Added to Concludo</dt><dd>Pasted in as a transcript, with the meeting details</dd>
           </dl>
           <div class="said">
-            <p><b>Priya, Northline Metro:</b> we announce in three stages. Letter first, then media, then the timetable.</p>
-            <p><b>Daniel:</b> no service times until the display firmware is verified. That sits with the systems team.</p>
-            <p class="lit"><b>Priya:</b> the whole pack has to exist by the executive review on the 29th.</p>
+            <p><b>Alex Mercer:</b> the aim today is to settle scope v3, agree the fee for phases one and two, and lock the start date.</p>
+            <p><b>Priya Kaur:</b> let's call it. We go ahead with scope v3, without landscaping.</p>
+            <p class="lit"><b>Tom Nguyen:</b> agreed from finance.</p>
           </div>
-          <div class="arrowdn"><span>Concludo reads it</span><span class="bar"></span></div>
+          <div class="arrowdn"><span>Concludo drafts it, you approve it</span><span class="bar"></span></div>
           <ul class="outlist">
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Meeting summary</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Decision log</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Six actions, owned</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Action plan</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Action tracker</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Decision memory</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Meeting output document</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Three decisions</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Five actions, owned</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Follow-up email</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Client deck</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Action timeline</li>
           </ul>
         </div>
 
         <div>
           <figure class="window" style="margin:0">
-            <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/projects/northline-metro/outputs</span></div>
-            <img src="/img/shot-output.webp" alt="The decision log and action plan produced from the meeting, showing a summary, three decisions each with the moment in the conversation it was agreed, a table of six actions with owners and due dates, two unresolved questions and the next contact." width="1100" height="833" loading="eager">
-            <div class="window-foot">Meeting output, demonstration data</div>
+            <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/meeting-output</span></div>
+            <img src="img/shot-output.webp" alt="The Outputs tab of a meeting output for a fictional client, showing four outputs built from the approved record: the meeting output document, a follow-up email with two drafts waiting for approval, a client deck and an action timeline, plus counts of three decisions, five actions, two open questions, two risks and the next meeting date." width="1600" height="1000" loading="eager">
+            <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
           </figure>
-          <div class="note" style="margin-top:22px"><p><strong>Read the fourth column.</strong> Every action carries the point in the conversation it was taken from, every decision names who agreed it, and the two things nobody settled are written down as unresolved rather than smoothed over. That is the difference between a document you can send and a document you have to check line by line.</p></div>
+          <div class="note" style="margin-top:22px"><p><strong>Nothing is final until you say so.</strong> Concludo drafts the record and every item waits for you to confirm it, one at a time. An action with no date is shown as a gap, not given one, and a remark marked private in the meeting is left out of every output. The email, deck and timeline are only built after the record is approved.</p></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:46px">
+        <span class="kicker">From the conversation to the tracked work</span>
+        <h2>Add the meeting, check every item, approve the record</h2>
+        <p class="lede" style="margin-top:16px">Each meeting moves through the same tabs: Transcript, Review, Record, Outputs and History. Actions then stay on the record until they close.</p>
+      </div>
+      <div class="block"><div class="block-txt">
+          <span class="kicker">Transcript</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Paste it, upload it or type it. Concludo does not join or record meetings.</h2>
+          <p class="muted">Paste a transcript or notes, or upload a text, Word or caption file. Add the meeting, project, date and audience, and Concludo shows what it will draft before you start. Everyone in the meeting must have been told it was being transcribed, and remarks flagged as private are left out of every output.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Works with transcripts exported from any recorder app, smart pen or meeting platform</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Concludo drafts the record for your review. Nothing is shared or sent until you approve it</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The meeting output document is on every plan. The email, deck and timeline are Pro and above</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-meeting-input.webp" alt="The Add the source screen of a new meeting output, with tabs for paste transcript, upload a file and typed notes, meeting, project, date and audience fields, a sample transcript, and a panel listing what Concludo will draft. A Sample data badge marks it as demonstration data." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block rev"><div class="block-txt">
+          <span class="kicker">Review</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Eleven of twelve confirmed. The twelfth has no date, so it says so.</h2>
+          <p class="muted">Every decision, action, question and risk is listed with the person and the moment in the transcript it came from. You confirm each one, edit it, or leave it as a gap. Where someone said "later this week", Concludo will not guess a date.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The source lines sit beside every item, so you can check rather than trust</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Items you leave undated are carried as "Date to be agreed"</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Private remarks are shown struck through and excluded from the record, both emails, the deck and the timeline</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-mo-review.webp" alt="The Review tab of a meeting output showing eleven of twelve items confirmed, decisions and actions each with a Confirm and an Edit button, and a side panel quoting the transcript lines behind an action that has no date, with the instruction that Concludo will not guess one." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-wash">
+    <div class="wrap">
+      <div class="block"><div class="block-txt">
+          <span class="kicker">Action Command Hub</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Every action from every meeting, counted once</h2>
+          <p class="muted">One screen shows where the work stands. Each action sits in exactly one bucket: completed, overdue, due today or pending, so the ring always adds up. In progress, waiting and blocked are filters on top, not extra slices that double count.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Eight count tiles that double as filters</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Owner, priority, status and due date on every row, with the meeting it came from</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Switch between your own actions and everything you are permitted to see</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-hub.webp" alt="The redesigned Action Command Hub for a fictional organisation, showing forty eight actions in a ring chart split into completed, overdue, due today and pending, eight count tiles, and a table of actions with owner, priority, status and due date. A banner says this is a design preview with demonstration data." width="1600" height="1502" loading="lazy"><div class="window-foot">Design preview of the redesigned Action Command Hub. Sample data for a fictional organisation, not live.</div></figure></div>
+      <div class="note" style="margin-top:36px;max-width:940px;margin-inline:auto"><p><strong>About these screens.</strong> They are design previews of Workspace pages in build. Every name, date and figure belongs to a fictional organisation. They show the intended shape of the product, not anyone's results.</p></div>
     </div>
   </section>
 
@@ -680,24 +709,20 @@ footer>.wrap{padding-block:50px}
       <div class="center" style="margin-bottom:48px">
         <span class="kicker">Inside the Workspace</span>
         <h2>Where the work actually gets done</h2>
-        <p class="lede" style="margin-top:16px">Every screen below is the real Concludo Workspace, running demonstration data. No customer information, mailbox or accounting system is connected in these views.</p>
+        <p class="lede" style="margin-top:16px">The screens below are Concludo Workspace views running sample data for a fictional organisation, and each is labelled. The CRM and Workspace home captures are earlier and are still to be refreshed. No customer information, mailbox or accounting system is connected in any of them.</p>
       </div>
 
       <div class="block">
         <div class="block-txt">
           <span class="kicker">Email Command Centre</span>
           <h2 style="font-size:clamp(25px,3vw,34px)">The inbox, sorted by what it is asking of you</h2>
-          <p class="muted">One prioritised view of the messages, decisions, deadlines and replies waiting on you. Work and personal accounts stay separate and are never combined. Threads that look unsafe are held out of every other list, with the reasoning written in plain words.</p>
-          <ul class="checks">
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Needs attention, reply queue, actions and deadlines, waiting, quick wins</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Reply drafts you edit and send yourself</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Advisory only. Concludo never blocks, moves or reports a message on its own</li>
-          </ul>
+          <p class="muted">One prioritised view of the replies owed, the deadlines stated in a thread, the actions waiting on you and the quick wins. Work and personal accounts stay separate and are never combined. A message that looks unsafe is held out of every other list for a security review, with the reasoning in plain words.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Overview, needs attention, reply queue, actions and deadlines, waiting, quick wins, clear backlog, all email and outputs, with work and personal kept apart</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Each score shows its reasons, and the inbox panel is read only</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A reply draft in a concise, formal or friendly tone, with the figures to check against the source. Send stays off until every check is ticked</li></ul>
         </div>
         <figure class="window" style="margin:0">
           <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/email</span></div>
-          <img src="/img/shot-email.webp" alt="The Email Command Centre showing six threads for one work account, a message from a rail operator about a station opening, and an intelligence panel listing four actions, two decisions, three deadlines, two questions and one risk read out of that thread." width="1100" height="888" loading="lazy">
-          <div class="window-foot">Email Command Centre, demonstration data</div>
+          <img src="img/shot-email.webp" alt="The Email Command Centre overview for a work account, with tabs for needs attention, reply queue, actions and deadlines, waiting, quick wins, clear backlog, all email, outputs and security review, eight count tiles, a Handle First list where each score shows its reasons, an Inbox Intelligence panel and today's workload. A Sample data badge marks it as demonstration data." width="1600" height="1000" loading="lazy">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
         </figure>
       </div>
     </div>
@@ -718,8 +743,8 @@ footer>.wrap{padding-block:50px}
         </div>
         <figure class="window" style="margin:0">
           <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/crm</span></div>
-          <img src="/img/shot-crm.webp" alt="The Concludo CRM overview showing open work of two point four million Australian dollars across thirty eight items, one point one eight million won in the last ninety days, fourteen accounts needing attention and forty six outstanding promises, with three doughnut charts for pipeline by stage, enquiries by source and promises outstanding." width="1100" height="669" loading="lazy">
-          <div class="window-foot">Concludo CRM overview, demonstration data. Not a Concludo customer.</div>
+          <img src="img/shot-crm.webp" alt="The Concludo CRM overview showing open work of two point four million Australian dollars across thirty eight items, one point one eight million won in the last ninety days, fourteen accounts needing attention and forty six outstanding promises, with three doughnut charts for pipeline by stage, enquiries by source and promises outstanding." width="1100" height="669" loading="lazy">
+          <div class="window-foot">Concludo CRM overview, earlier capture. Demonstration data, not a Concludo customer.</div>
         </figure>
       </div>
     </div>
@@ -731,25 +756,13 @@ footer>.wrap{padding-block:50px}
         <div class="block-txt">
           <span class="kicker">Concludo Calendar</span>
           <h2 style="font-size:clamp(25px,3vw,34px)">The day, with the commitments in it</h2>
-          <p class="muted">Not a second diary. The meetings sit beside the things those meetings created: the actions with dates on them, the call backs somebody promised, the deadlines a conversation set, and the approvals waiting on you. Day, week, month, agenda and a task board, in Australian time.</p>
-          <ul class="checks">
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Each meeting carries its transcript, summary, decisions and actions on the same record</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A commitment made out loud on Monday has a date on it by Monday afternoon</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Day notes stay with the day, so the context is there when you come back to it</li>
-          </ul>
-          <div class="legend">
-            <span><i style="background:#21395C"></i>Meetings</span>
-            <span><i style="background:#6B7689"></i>Tasks</span>
-            <span><i style="background:#BC8A1C"></i>Call backs</span>
-            <span><i style="background:#3E7A58"></i>Events</span>
-            <span><i style="background:#E2B53C"></i>Approvals</span>
-            <span><i style="background:#A4434E"></i>Deadlines</span>
-          </div>
+          <p class="muted">Day, work week, month and agenda views, with an Action Board beside them. Generate to Calendar turns a finished meeting record into proposed tasks, events, a timeline, follow-ups and review dates. Nothing is written to the calendar until you review it, and you can undo for 60 seconds.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Each item links back to the meeting record or email it came from</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A conflict between Concludo and your own calendar is shown side by side, and you choose which to keep</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>An ICS feed and ICS or CSV export, with the defaults set once in calendar settings</li></ul>
         </div>
         <figure class="window" style="margin:0">
           <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/calendar</span></div>
-          <img src="/img/shot-calendar.webp" alt="The Concludo Calendar day view for Monday 19 October 2026, a twenty four hour overview holding fourteen items from a seven thirty call back through four meetings, two tasks, two agent runs, an approval, a deadline and a client lunch, with a day notes panel beside it." width="1100" height="786" loading="lazy">
-          <div class="window-foot">Concludo Calendar, day view, demonstration data</div>
+          <img src="img/shot-calendar.webp" alt="The Concludo Calendar work week view for 16 to 20 November 2026, with meetings, tasks, follow-ups and due items, an item detail panel and a calendars panel. A Sample data badge marks it as demonstration data." width="1600" height="602" loading="lazy">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
         </figure>
       </div>
     </div>
@@ -760,19 +773,14 @@ footer>.wrap{padding-block:50px}
       <div class="block">
         <div class="block-txt">
           <span class="kicker">AI agents</span>
-          <h2 style="font-size:clamp(25px,3vw,34px)">Nine agents that do the work after the meeting</h2>
-          <p class="muted">Each one watches something specific, drafts what it finds, and then stops. Agents report on actions, decisions, deadlines and risks. They do not score, rank or rate anyone.</p>
-          <ul class="checks">
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Approval first, every time, with no exception for routine work</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>What an agent read, what it produced and who approved it stays on the record</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A proposal that cannot point at a real record never reaches you</li>
-          </ul>
-          <div class="btns" style="margin-top:26px"><a class="btn btn-line btn-sm" href="/ai-agents/">See all nine agents</a></div>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Thirteen agents that do the work around the meeting</h2>
+          <p class="muted">Each one watches something specific, prepares what it finds, and then stops. Ten propose and you decide. Three only report. None of them sends anything, and none scores, ranks or rates a person.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Approval first, every time. Anything that would leave Concludo waits in the Approval Centre for a person</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Only what the record says: every item links to the meeting or line it came from</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>One switch in Governance pauses any agent, or all of them</li></ul><div class="btns" style="margin-top:26px"><a class="btn btn-line btn-sm" href="#agents" data-nav="agents">See all 13 agents</a></div>
         </div>
         <figure class="window" style="margin:0">
           <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/ai-agents</span></div>
-          <img src="/img/shot-agents.webp" alt="The AI agents page, headed nine agents that do the work after the meeting, with counters for nine agents, four groups of work, one approval gate and zero actions taken without a person." width="1100" height="735" loading="lazy">
-          <div class="window-foot">AI agents, Concludo Workspace</div>
+          <img src="img/shot-agents.webp" alt="The Agents page headed 13 agents that read your Concludo records and prepare work, with four principles: they prepare and you decide, only what the record says, work and never people, and one switch stops them all. Ten agents propose and three report only. A Sample data badge marks it as demonstration data." width="1600" height="1000" loading="lazy">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
         </figure>
       </div>
     </div>
@@ -783,18 +791,14 @@ footer>.wrap{padding-block:50px}
       <div class="block rev wide">
         <div class="block-txt">
           <span class="kicker">Workflow builder</span>
-          <h2 style="font-size:clamp(25px,3vw,34px)">Type what you want to happen. Concludo builds it.</h2>
-          <p class="muted">Most automation tools ask you to learn them first: which trigger, which node, which field maps to which. That is the guesswork, and it is why so many automations never get built. In Concludo you describe the outcome in a sentence, in your own words, and the workflow comes back drawn, labelled and explained in plain English before it has run once.</p>
-          <ul class="checks">
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>No syntax to learn, and no vocabulary of triggers and nodes to learn first</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Change it the same way you built it, by saying what should be different</li>
-            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Every workflow that reaches outside Concludo carries an approval step that cannot be configured away</li>
-          </ul>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Say what should happen. See it laid out before it runs.</h2>
+          <p class="muted">Describe the routine in plain English and Concludo lays out the steps, or build it yourself by dragging steps onto a canvas. Every workflow shows its checks, can be test run without sending anything, and carries an approval step before anything leaves.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Checks such as "approval sits before the send step" and "runs only on meetings with a consent basis" are shown on the workflow itself</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Run history, an Approval Centre and a Governance Centre sit beside the builder</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Where a connected app stops answering, a Fix it panel says what to do</li></ul>
         </div>
         <figure class="window" style="margin:0">
           <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/workflows/new</span></div>
-          <img src="/img/shot-wf-build.webp" alt="The Concludo workflow builder asking what do you want Concludo to automate, with a plain language input, a build workflow button, and a row of connections Concludo can use, listed by what each one does rather than by brand." width="1100" height="691" loading="lazy">
-          <div class="window-foot">Workflow builder, demonstration account</div>
+          <img src="img/shot-wf-build.webp" alt="The Create workflow screen, with a Describe it panel where you say in plain English what should happen and a Build manually panel for dragging steps onto a canvas, plus templates to start from." width="1600" height="1000" loading="lazy">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
         </figure>
       </div>
 
@@ -811,7 +815,7 @@ footer>.wrap{padding-block:50px}
         </div>
       </div>
       <div class="center" style="margin-top:34px">
-        <a class="btn btn-primary" href="/workflow-builder/">See the builder and nine ready-made workflows</a>
+        <a class="btn btn-primary" href="#workflows" data-nav="workflows">See the builder and eight ready-made workflows</a>
       </div>
     </div>
   </section>
@@ -832,7 +836,6 @@ footer>.wrap{padding-block:50px}
           <div class="mico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 12h6M12 9v6"/></svg></div>
           <h3>Connect your apps</h3>
           <p>Sign in through each provider's own page and approve exactly what Concludo may do. Mail, calendar, files, tasks, accounting and CRM tools connect this way. Concludo never sees your password.</p>
-          <p class="fine" style="margin-top:10px"><a href="https://app.concludo.com.au/integrations" style="color:var(--gold);text-decoration:underline;font-weight:600">Connect apps in the Workspace &rarr;</a></p>
         </div>
         <div class="mod t-mist">
           <div class="mico"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
@@ -856,7 +859,7 @@ footer>.wrap{padding-block:50px}
         </div>
       </div>
       <div class="center" style="margin-top:36px">
-        <a class="btn btn-line" href="/workspace/">Walk through the whole Workspace</a>
+        <a class="btn btn-line" href="#workspace" data-nav="workspace">Walk through the whole Workspace</a>
       </div>
     </div>
   </section>
@@ -869,7 +872,7 @@ footer>.wrap{padding-block:50px}
           <h2>Built so nobody has to take its word for anything</h2>
           <p class="lede" style="margin-top:18px">Most of the risk in AI at work is not that the model gets something wrong. It is that nobody can tell when it has. Three rules hold everywhere in Concludo, and they are enforced in the software rather than described in a policy.</p>
           <div class="stats">
-            <div class="stat"><div class="n">9</div><div class="l">Agents</div></div>
+            <div class="stat"><div class="n">13</div><div class="l">Agents</div></div>
             <div class="stat"><div class="n">1</div><div class="l">Approval gate, always</div></div>
             <div class="stat"><div class="n">0</div><div class="l">Actions without a person</div></div>
             <div class="stat"><div class="n">0</div><div class="l">Scores or rankings of people</div></div>
@@ -925,8 +928,8 @@ footer>.wrap{padding-block:50px}
           <h2>Software fixes the follow-up. It does not fix the meeting.</h2>
           <p class="muted" style="margin-top:16px">Concludo also teaches the part no software can do for you: deciding whether the meeting should exist, costing it, writing the agenda as questions, cutting the attendee list, and running the twenty four hour follow-up. That is the Meeting Mastery Workbook, and it works whether or not you ever open the Workspace.</p>
           <div class="btns" style="margin-top:26px">
-            <a class="btn btn-primary" href="/meeting-mastery-workbook/">See the Workbook</a>
-            <a class="btn btn-line" href="/free-tools/">Five free tools</a>
+            <a class="btn btn-primary" href="#workbook" data-nav="workbook">See the Workbook</a>
+            <a class="btn btn-line" href="#tools" data-nav="tools">Five free tools</a>
           </div>
         </div>
         <div class="tiles" style="grid-template-columns:1fr 1fr">
@@ -952,7 +955,7 @@ footer>.wrap{padding-block:50px}
           <div class="per">A month, one seat. Or AU$250 a year, which is two months free.</div>
           <ul>
             <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Twenty processed transcripts a month</li>
-            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Summary, decision log, action plan and action tracker</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Meeting output document, summary, decision log, action plan and action tracker</li>
             <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Three projects and search</li>
             <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>One connected account, export and delete your data</li>
           </ul>
@@ -966,7 +969,7 @@ footer>.wrap{padding-block:50px}
           <ul>
             <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Everything in the Starter subscription</li>
             <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>One hundred processed transcripts a month, unlimited projects</li>
-            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Decision memory across clients, and the calendar</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Follow-up email, client deck and action timeline. Decision memory across clients, and the calendar</li>
             <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Three connected accounts, and an audit of your own actions</li>
           </ul>
           <a class="btn btn-gold" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest</a>
@@ -1001,7 +1004,7 @@ footer>.wrap{padding-block:50px}
         <details><summary>Will it send things on my behalf?</summary><div class="ans">Not unless you approve that specific thing. Drafts, record changes, calendar invitations and briefing releases all wait in the Approvals Centre. Nothing in the product is permitted to mark itself as authorised to send.</div></details>
         <details><summary>Can I buy it today?</summary><div class="ans">No. The Workspace is built and partly working, and it is not yet billable or open to customers. There is no checkout on this site. The five free tools are live and need no account, and the prices on the pricing page are published as indicative so that buyers can tell us where they are wrong. Concludo Pty Ltd is a registered Australian company, ACN 701 605 898, and what you see here is what exists rather than what is planned.</div></details>
         <details><summary>Is a language model writing this?</summary><div class="ans">Not today. Everything the Workspace produces now is rule-based extraction from what you pasted, and no language model is called anywhere in the product. That is why every line can be traced back to the sentence it came from. When a language model is live, tested and covered by the contract terms, this site will say so plainly rather than quietly changing the wording.</div></details>
-        <details><summary>What is not built yet?</summary><div class="ans">Branded PowerPoint export, automatic follow-up email drafting, single sign-on and usage limit enforcement. The CRM and the Communication Hub run on demonstration data. Those things appear in the plan designs on the pricing page because that is where they will sit, and they are not claimed as working anywhere on this site.</div></details>
+        <details><summary>What is not built yet?</summary><div class="ans">Branded PowerPoint export, the client deck, the action timeline, follow-up email drafting, single sign-on and usage limit enforcement. The CRM and the Communication Hub run on demonstration data. Those things appear in the plan designs on the pricing page because that is where they will sit, and they are not claimed as working anywhere on this site.</div></details>
         <details><summary>Where is Concludo based?</summary><div class="ans">Melbourne, Australia. Concludo Pty Ltd, ACN 701 605 898. Australian English, Australian time zones, and an Australian business you can email directly.</div></details>
       </div>
     </div>
@@ -1012,18 +1015,1220 @@ footer>.wrap{padding-block:50px}
       <h2>Start with the tools that are already live</h2>
       <p class="lede" style="margin:18px auto 30px;color:#4A3A10">Five free tools, no account and no card. The Workspace is in build, and you can put your name down to see it first.</p>
       <div class="btns">
-        <a class="btn btn-primary" href="https://app.concludo.com.au/integrations" target="_blank" rel="noopener noreferrer">Open Workspace Connection</a>
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
         <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest</a>
       </div>
     </div>
   </section>
+</div>
+
+<!-- ============================= WORKSPACE ============================= -->
+<div class="page" id="page-workspace" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">The Workspace</span>
+      <h1 style="max-width:16ch">Everything that happens after somebody stops talking</h1>
+      <p class="lede" style="margin-top:20px">One place that takes a transcript and produces the work, holds the customer record, sorts the inbox, runs the routines, and makes a person approve anything that leaves the building.</p>
+      <div class="btns"><a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:46px">
+        <span class="kicker">How a meeting moves through the Workspace</span>
+        <h2>Transcript, review, record, outputs, history</h2>
+        <p class="lede" style="margin-top:16px">Every meeting follows the same five tabs, so the result looks the same whoever ran the meeting.</p>
+      </div>
+      <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-bottom:56px"><div class="tile"><div class="num">TAB 1</div><h3>Transcript</h3><p>Paste, upload or type the source and add the meeting details.</p></div><div class="tile"><div class="num">TAB 2</div><h3>Review</h3><p>Confirm each decision, action, question and risk against its source line.</p></div><div class="tile"><div class="num">TAB 3</div><h3>Record</h3><p>The approved record as a document, with PDF and Word download.</p></div><div class="tile"><div class="num">TAB 4</div><h3>Outputs</h3><p>Follow-up email, client deck and action timeline, built from the approved record.</p></div><div class="tile"><div class="num">TAB 5</div><h3>History</h3><p>Who confirmed, edited and approved what, and when.</p></div></div>
+      <div class="block"><div class="block-txt">
+          <span class="kicker">Transcript</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Add the source</h2>
+          <p class="muted">Paste a transcript or notes, or upload a text, Word or caption file. Concludo does not join or record meetings. Add the meeting, project, date and audience, and the panel on the right shows exactly what will be drafted.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Meeting output document on every plan</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Follow-up email, client deck and action timeline on Pro and above</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Everyone in the meeting must have been told it was being transcribed, and private remarks are left out</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-meeting-input.webp" alt="The Add the source screen of a new meeting output, with tabs for paste transcript, upload a file and typed notes, meeting, project, date and audience fields, a sample transcript, and a panel listing what Concludo will draft. A Sample data badge marks it as demonstration data." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="block rev"><div class="block-txt">
+          <span class="kicker">Review</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Confirm one item at a time</h2>
+          <p class="muted">Decisions, actions, open questions and risks appear as a list. Each has Confirm and Edit, and the panel beside it shows the transcript lines it came from. An action without a date is flagged, and Concludo will not guess one.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Progress is shown as items confirmed out of items found</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Add a date, or leave the action as "Date to be agreed"</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Confirm and approve the record when every item is settled</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-mo-review.webp" alt="The Review tab of a meeting output showing eleven of twelve items confirmed, decisions and actions each with a Confirm and an Edit button, and a side panel quoting the transcript lines behind an action that has no date, with the instruction that Concludo will not guess one." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block"><div class="block-txt">
+          <span class="kicker">Record</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">The approved record, as a document</h2>
+          <p class="muted">The record becomes a three page document with the summary, decision log, action register and evidence. Each item links to its transcript line, a private remark is withheld, and no date is printed that was not said in the meeting.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Download as PDF or Word, or save to the project</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The version, approver, approval time and audience are on the record</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The record is what every other output is built from</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-mo-record.webp" alt="The Record tab of a meeting output showing a three page record document preview, with version, approval, audience and page details, three checks, and buttons to download as PDF or Word or save to the project." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="block rev"><div class="block-txt">
+          <span class="kicker">Outputs</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Four outputs from one approved record</h2>
+          <p class="muted">The meeting output document, a follow-up email, a client deck and an action timeline, all built from the approved record only. Two email drafts wait for approval, and nothing is shared or sent until you approve it.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The follow-up email, client deck and action timeline are Pro and above</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The action timeline is built only when the meeting has enough dated actions</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Counts of decisions, actions, open questions, risks and the next meeting sit underneath</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-output.webp" alt="The Outputs tab of a meeting output for a fictional client, showing four outputs built from the approved record: the meeting output document, a follow-up email with two drafts waiting for approval, a client deck and an action timeline, plus counts of three decisions, five actions, two open questions, two risks and the next meeting date." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px"><span class="kicker">Pro and above</span><h2>The email and the deck, checked before they go anywhere</h2>
+        <p class="lede" style="margin-top:16px">The follow-up email comes in a client version and an internal version. The client deck is a branded six slide presentation, drafted from the same approved record.</p></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;align-items:start"><figure class="window" style="margin:0"><img src="img/shot-mo-email.webp" alt="The client version of a follow-up email drafted from the approved record, with decisions, actions and open items listed, a set of checks to complete before approving, tone choices of professional, warm or brief, and Approve and Edit draft buttons. Nothing is sent until the person approves it." width="1600" height="1000" loading="lazy"><div class="window-foot">Follow-up email, client version. Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure><figure class="window" style="margin:0"><img src="img/shot-mo-deck.webp" alt="The client deck output, a six slide branded presentation drafted from the approved record, shown with its slide strip, checks that only approved items appear and that text stays editable, and buttons to download as PowerPoint or PDF." width="1600" height="1000" loading="lazy"><div class="window-foot">Client deck. Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+      <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Checks before approving: risks left out of the client version, private remark withheld, every date matching the record</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Tone choices of professional, warm or brief, and an Edit draft button</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Nothing is sent until you approve. After approval, copy it or open it in your email app</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The deck can be downloaded as PowerPoint or PDF, and every text box stays editable</li></ul>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px"><span class="kicker">New</span><h2>An action timeline, and a clear line between plans</h2>
+        <p class="lede" style="margin-top:16px">The action timeline lays every dated action out on one road, by date and owner, as a six slide PowerPoint. On the Starter subscription the meeting output document is included, and the other three outputs show as included in Pro.</p></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;align-items:start"><figure class="window" style="margin:0"><img src="img/shot-mo-timeline.webp" alt="The action timeline output, a six slide visual of every dated action in the meeting, with checks, a list of the slides it will build and a left out note, and a Generate timeline button." width="1600" height="1000" loading="lazy"><div class="window-foot">Action timeline. Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure><figure class="window" style="margin:0"><img src="img/shot-mo-starter.webp" alt="The Starter plan view of the Outputs tab, where the meeting output document is available and the follow-up email, client deck and action timeline are marked as included in the Pro plan, with a table of what each plan includes." width="1600" height="1000" loading="lazy"><div class="window-foot">Starter plan view. Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-wash">
+    <div class="wrap">
+      <div class="block rev"><div class="block-txt">
+          <span class="kicker">Action Command Hub</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Every action from every meeting, counted once</h2>
+          <p class="muted">Approved actions land here with an owner, a priority, a status and a due date. Each action sits in exactly one bucket: completed, overdue, due today or pending. In progress, waiting and blocked are filters on top, so the ring always adds up.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Eight count tiles that double as filters</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Every row names the meeting it came from</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Add an item by hand or import an existing register</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-hub.webp" alt="The redesigned Action Command Hub for a fictional organisation, showing forty eight actions in a ring chart split into completed, overdue, due today and pending, eight count tiles, and a table of actions with owner, priority, status and due date. A banner says this is a design preview with demonstration data." width="1600" height="1502" loading="lazy"><div class="window-foot">Design preview of the redesigned Action Command Hub. Sample data for a fictional organisation, not live.</div></figure></div><div class="note" style="margin-top:36px;max-width:940px;margin-inline:auto"><p><strong>Design previews.</strong> The meeting output screens and the Action Command Hub show Workspace pages in build. The data is for a fictional organisation, and nothing here is a record of anyone's results.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block">
+        <div class="block-txt">
+          <span class="kicker">Copilot and the home screen</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Start from a paste, not a blank page</h2>
+          <p class="muted">Create a project, paste the transcript, and the outputs are drafted against it. Ask the Copilot what was decided, what is overdue and who owns it, and the answer arrives with the records attached. Where the records do not answer, it says so rather than inventing a paragraph.</p>
+          <ul class="checks">
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Transcript archive and saved projects</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Decision memory across sessions, not only within one</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Outputs exported as documents, slides or structured data</li>
+          </ul>
+        </div>
+        <figure class="window" style="margin:0">
+          <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/dashboard</span></div>
+          <img src="img/shot-dashboard.webp" alt="The Workspace home screen with quick actions for creating a project, pasting a transcript, opening projects and viewing decision memory." width="1100" height="602" loading="eager">
+          <div class="window-foot">Workspace home, earlier capture. Demonstration data.</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="block rev">
+        <div class="block-txt">
+          <span class="kicker">Email Command Centre</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">The inbox, sorted by what it is asking of you</h2>
+          <p class="muted">One prioritised view of the replies owed, the deadlines stated in a thread, the actions waiting on you and the quick wins. Work and personal accounts stay separate and are never combined. A message that looks unsafe is held out of every other list for a security review, with the reasoning in plain words.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Overview, needs attention, reply queue, actions and deadlines, waiting, quick wins, clear backlog, all email and outputs, with work and personal kept apart</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Each score shows its reasons, and the inbox panel is read only</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A reply draft in a concise, formal or friendly tone, with the figures to check against the source. Send stays off until every check is ticked</li></ul>
+        </div>
+        <figure class="window" style="margin:0">
+          <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/email</span></div>
+          <img src="img/shot-email.webp" alt="The Email Command Centre overview for a work account, with tabs for needs attention, reply queue, actions and deadlines, waiting, quick wins, clear backlog, all email, outputs and security review, eight count tiles, a Handle First list where each score shows its reasons, an Inbox Intelligence panel and today's workload. A Sample data badge marks it as demonstration data." width="1600" height="1000" loading="lazy">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block">
+        <div class="block-txt">
+          <span class="kicker">CRM and KAM Copilot</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">The account record, kept honest</h2>
+          <p class="muted">Pipeline, leads, commitments, organisations, people and account plans. The KAM Copilot reads one account through six lenses and separates what is recorded from what it inferred from what nobody has answered, then gives you the question that would close each gap.</p>
+          <ul class="checks">
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Proposed record changes queue for confirmation</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The buying centre is shown as roles that are filled or empty, never as a judgement about a person</li>
+            <li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Promises on both sides, with the date each one was given</li>
+          </ul>
+        </div>
+        <figure class="window" style="margin:0">
+          <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/crm</span></div>
+          <img src="img/shot-crm.webp" alt="Concludo CRM overview with four headline figures, each stating how much of it is recorded, and three doughnut charts for pipeline by stage, enquiries by source and promises outstanding." width="1100" height="669" loading="lazy">
+          <div class="window-foot">Concludo CRM, earlier capture. Demonstration data.</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="block rev">
+        <div class="block-txt">
+          <span class="kicker">Agents and approvals</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Thirteen agents, one door</h2>
+          <p class="muted">Agents prepare; the Approval Centre is where a person decides. Outgoing replies, external invitations, record changes and document releases all pass through the same queue, and the audit record keeps what was read, what was produced and who cleared it.</p>
+          <div class="btns" style="margin-top:24px"><a class="btn btn-line btn-sm" href="#agents" data-nav="agents">See the 13 agents</a></div>
+        </div>
+        <figure class="window" style="margin:0">
+          <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/ai-agents</span></div>
+          <img src="img/shot-agents.webp" alt="The Agents page headed 13 agents that read your Concludo records and prepare work, with four principles: they prepare and you decide, only what the record says, work and never people, and one switch stops them all. Ten agents propose and three report only. A Sample data badge marks it as demonstration data." width="1600" height="1000" loading="lazy">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block">
+        <div class="block-txt">
+          <span class="kicker">Concludo Calendar</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">The day, with the commitments in it</h2>
+          <p class="muted">Day, work week, month and agenda views, with an Action Board beside them. Generate to Calendar turns a finished meeting record into proposed tasks, events, a timeline, follow-ups and review dates. Nothing is written to the calendar until you review it, and you can undo for 60 seconds.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Each item links back to the meeting record or email it came from</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A conflict between Concludo and your own calendar is shown side by side, and you choose which to keep</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>An ICS feed and ICS or CSV export, with the defaults set once in calendar settings</li></ul>
+        </div>
+        <figure class="window" style="margin:0">
+          <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/calendar</span></div>
+          <img src="img/shot-calendar.webp" alt="The Concludo Calendar work week view for 16 to 20 November 2026, with meetings, tasks, follow-ups and due items, an item detail panel and a calendars panel. A Sample data badge marks it as demonstration data." width="1600" height="602" loading="lazy">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:38px">
+        <span class="kicker">Connect app</span>
+        <h2>Your tools, connected through their own sign-in</h2>
+        <p class="lede" style="margin-top:16px">You sign in with the provider, approve exactly what Concludo may do, and Concludo checks the connection before it shows as connected. Concludo never sees your password.</p>
+      </div>
+      <div class="tiles">
+        <div class="tile"><h3>Mail and calendar</h3><p>Send the approved follow-up, and put the agreed dates in the diary.</p></div>
+        <div class="tile"><h3>Files and notes</h3><p>File the summary and the deck where the rest of the engagement already lives.</p></div>
+        <div class="tile"><h3>Tasks and projects</h3><p>Push action items with their owners and dates into the tracker your team uses.</p></div>
+        <div class="tile"><h3>CRM, accounting, social</h3><p>Update the customer record, raise what needs raising, schedule what was agreed.</p></div>
+      </div>
+      <div class="note" style="margin-top:30px"><p><strong>Independence.</strong> Concludo is an independent product. It is not affiliated with, endorsed by, or partnered with any device maker, meeting platform or note-taking service. It works with transcripts from any AI pen, phone recording or meeting platform. Connections are added progressively and each one shows its own status in the app.</p></div>
+    </div>
+  </section>
+
+  <section class="bg-wash">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:38px">
+        <span class="kicker">Workflow builder</span>
+        <h2>Describe the routine once. It runs the same way every time.</h2>
+      </div>
+      <div class="tiles">
+        <div class="tile"><div class="num">TEMPLATE</div><h3>Meeting follow-up</h3><p>Transcript lands, the outputs are extracted, the actions queue for approval and then go to the tracker with their dates.</p></div>
+        <div class="tile"><div class="num">TEMPLATE</div><h3>Weekly digest</h3><p>What was decided, what is overdue and what is waiting on somebody else, assembled every Friday.</p></div>
+        <div class="tile"><div class="num">TEMPLATE</div><h3>Board briefing</h3><p>Decisions, risks and actions since the last meeting, in the format the board already reads.</p></div>
+        <div class="tile" style="background:var(--ink)"><div class="num" style="color:#9FB0C9">ALWAYS</div><h3 style="color:#fff">An approval step</h3><p style="color:#C3D0E4">Any workflow reaching outside Concludo has one, and it cannot be configured away.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:34px">
+        <span class="kicker">Build state, 20 October 2026</span>
+        <h2>What works today, and what does not</h2>
+        <p class="lede" style="margin-top:16px">Everything on this site describes software that exists. This is the part most product pages leave out, so it is written down here instead.</p>
+      </div>
+      <div class="state" style="max-width:940px;margin-inline:auto">
+        <div class="state-row">
+          <div class="lab"><i style="background:#2E7D5B"></i>Working</div>
+          <div><p>Transcript to summary, action plan and decision log. Projects, decision memory, the action tracker, search and insight statistics. Team workspaces, roles, approvals, the audit log, retention and legal hold. Provider sign-in for mail and calendar. <b>All of it rule-based: no language model is called anywhere.</b></p></div>
+        </div>
+        <div class="state-row">
+          <div class="lab"><i style="background:#BC8A1C"></i>Partial</div>
+          <div><p>The Email Command Centre and the Copilot, rule-based, with sending held behind approval. Workflows: storage is real, most execution is simulated. PDF reports produce real files. The free trial and the billing screens exist but are not yet enforced server side.</p></div>
+        </div>
+        <div class="state-row">
+          <div class="lab"><i style="background:#A4434E"></i>Not built</div>
+          <div><p>Branded PowerPoint export, the client deck, the action timeline and follow-up email drafting are designed and shown as previews, but are not built yet. Single sign-on, usage limits and seat enforcement are not built either. The Enterprise plan. The CRM and the Communication Hub run on demonstration data only. Privacy, terms and refund pages are in legal review.</p></div>
+        </div>
+      </div>
+      <div class="note" style="margin-top:28px;max-width:940px;margin-inline:auto"><p><strong>The rule this site follows.</strong> Say what the Workspace does today. Do not call anything AI-powered until a language model is live, tested and covered by the contract terms. Name a recorder or a platform only with the independence disclaimer. Every product screen on this site is sample data for a fictional organisation, and a screen that shows a design still in build says so.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>See it before it opens</h2>
+      <p class="lede" style="margin:18px auto 30px;color:#4A3A10">The Workspace is in build and is not open for sale. The five free tools are live now and need no account at all.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
+        <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="#pricing" data-nav="pricing">Pricing</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================= AGENTS ============================= -->
+<div class="page" id="page-agents" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">AI agents</span>
+      <h1 style="max-width:18ch">Thirteen agents that do the <span class="mark">work around the meeting</span></h1>
+      <p class="lede" style="margin-top:20px">Each one watches something specific, drafts what it finds, and then stops. Nothing is sent, assigned or changed until a person approves it.</p>
+    </div>
+  </section>
+
+  <section class="bg-ink">
+    <div class="wrap">
+      <h2>Concludo proposes. A person disposes.</h2>
+      <div class="stats" style="margin-top:30px;margin-bottom:40px">
+        <div class="stat"><div class="n">13</div><div class="l">Agents</div></div>
+        <div class="stat"><div class="n">5</div><div class="l">Groups of work</div></div>
+        <div class="stat"><div class="n">1</div><div class="l">Approval gate, always</div></div>
+        <div class="stat"><div class="n">0</div><div class="l">Actions without a person</div></div>
+      </div>
+      <div class="rules" style="flex-direction:row;flex-wrap:wrap">
+        <div class="rule-card" style="flex:1 1 260px"><h3>Approval first</h3><p>No agent sends a message, assigns work or changes a record on its own. Every external action waits for a named person.</p></div>
+        <div class="rule-card" style="flex:1 1 260px"><h3>Work, not people</h3><p>Agents report on actions, decisions, deadlines and risks. They do not score, rank or rate anyone, and the schema will not hold such a figure.</p></div>
+        <div class="rule-card" style="flex:1 1 260px"><h3>On the record</h3><p>What an agent read, what it produced and who approved it is written to the audit log and kept.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:34px">
+        <span class="kicker">Two postures</span>
+        <h2>What an agent is allowed to do</h2>
+      </div>
+      <div class="auds" style="grid-template-columns:1fr 1fr;max-width:900px;margin-inline:auto">
+        <div class="aud">
+          <div class="aud-top"><div class="who">Ten agents</div><h3>Proposes. You decide.</h3></div>
+          <div class="aud-body"><p>They draft work and hold it. The draft exists, nobody else has seen it, and it goes nowhere until you approve that exact text.</p></div>
+        </div>
+        <div class="aud">
+          <div class="aud-top"><div class="who">Three agents</div><h3>Reports only</h3></div>
+          <div class="aud-body"><p>They read and write a report for you. They change nothing, send nothing and assign nothing, ever. There is no path in the code by which they could.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:46px">
+        <span class="kicker">The thirteen</span>
+        <h2>Each one has a single job</h2>
+        <p class="lede" style="margin-top:16px">A narrow brief is what makes an agent's output checkable. Each one says in its own words what it watches and what it hands you, so you can tell before you run it whether it is the one you want.</p>
+      </div>
+
+      <div class="lane"><div class="lane-head"><h3>Before and after the meeting</h3><span class="cat">3 agents</span><span class="cm">Brief you going in, draft the follow-up coming out.</span></div><div class="agrid three"><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Meeting prep <span class="pill-post decide" style="margin:0 0 0 6px;background:var(--ink);color:#fff">New</span></h4><span class="pill-post reports">Reports only</span></div></div><p class="voice">A one-page brief before you walk in: what was decided last time, what is still open, what to ask.</p><div class="alab">Watches</div><p class="watch">Saved meetings, actions and decisions for the same client or project.</p><div class="alab">Hands you</div><ul><li>Last decisions, with dates</li><li>Open actions and unanswered risks</li><li>A suggested agenda</li></ul><div class="afoot">For Pro and Team</div></div><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Meeting Follow-Up</h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Turns a finished meeting into the follow-up: the message, the action review and the next agenda.</p><div class="alab">Watches</div><p class="watch">The saved meeting record and its actions.</p><div class="alab">Hands you</div><ul><li>A follow-up email draft for approval</li><li>Action review</li><li>The next meeting's agenda</li></ul><div class="afoot">For every plan</div></div><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Workflow Coordinator</h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Lays out the steps from a meeting to finished work, and packages them for your approval.</p><div class="alab">Watches</div><p class="watch">Completed meetings and the workflows you have set up.</p><div class="alab">Hands you</div><ul><li>A step-by-step plan</li><li>Approval inserted before anything leaves</li><li>Run history</li></ul><div class="afoot">For Pro and Team</div></div></div></div>
+<div class="lane"><div class="lane-head"><h3>Keeping work moving</h3><span class="cat">3 agents</span><span class="cm">Find what is late, stuck or promised, before anyone has to ask.</span></div><div class="agrid three"><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Action Accountability</h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Surfaces actions that are overdue, blocked, unassigned or stalled, and drafts the nudge.</p><div class="alab">Watches</div><p class="watch">The Action Command Hub, by project.</p><div class="alab">Hands you</div><ul><li>Overdue and stalled actions</li><li>Actions with no owner</li><li>Escalation drafts for approval</li></ul><div class="afoot">For every plan</div></div><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Decision Follow-Up</h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Watches decisions that are pending, at risk or waiting on something still unresolved.</p><div class="alab">Watches</div><p class="watch">Decision memory across your projects.</p><div class="alab">Hands you</div><ul><li>Decisions pending past their date</li><li>Decisions with no follow-up action</li><li>A follow-up question to send</li></ul><div class="afoot">For every plan</div></div><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Client commitments <span class="pill-post decide" style="margin:0 0 0 6px;background:var(--ink);color:#fff">New</span></h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Tracks what you promised clients, like "I'll send the proposal by Friday", apart from internal work.</p><div class="alab">Watches</div><p class="watch">Actions owed to a client, and approved follow-ups.</p><div class="alab">Hands you</div><ul><li>Promises due this week, by client</li><li>Promises past due, with their meeting</li><li>A "where things stand" draft</li></ul><div class="afoot">For Pro and Team, for consultants and coaches</div></div></div></div>
+<div class="lane"><div class="lane-head"><h3>Seeing risk early</h3><span class="cat">2 agents</span><span class="cm">Patterns across meetings that a single meeting cannot show.</span></div><div class="agrid"><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Risk Monitoring</h4><span class="pill-post reports">Reports only</span></div></div><p class="voice">Flags missed deadlines, repeated delays, recurring risks and scope drift.</p><div class="alab">Watches</div><p class="watch">Meeting history, actions and risks over time.</p><div class="alab">Hands you</div><ul><li>Recurring risks with no response</li><li>Repeated delays on the same work</li><li>Where work is queuing</li></ul><div class="afoot">For Pro and Team</div></div><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Project Intelligence</h4><span class="pill-post reports">Reports only</span></div></div><p class="voice">Reads across a project's meetings for repeated themes, openings and bottlenecks.</p><div class="alab">Watches</div><p class="watch">Every saved meeting in a project.</p><div class="alab">Hands you</div><ul><li>Themes that keep coming up</li><li>Opportunities raised more than once</li><li>Delivery risks by project</li></ul><div class="afoot">For Pro and Team</div></div></div></div>
+<div class="lane"><div class="lane-head"><h3>Reports and packs</h3><span class="cat">3 agents</span><span class="cm">Finished documents, drafted from the records you already have.</span></div><div class="agrid three"><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Report Generation</h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Produces executive briefings, project health reports and decision audits, on demand or on a schedule.</p><div class="alab">Watches</div><p class="watch">Projects, actions and decisions for the period you choose.</p><div class="alab">Hands you</div><ul><li>Executive briefing</li><li>Project health report</li><li>Decision audit</li></ul><div class="afoot">For Pro and Team</div></div><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Board pack <span class="pill-post decide" style="margin:0 0 0 6px;background:var(--ink);color:#fff">New</span></h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Builds the period's board pack as a branded deck outline from decisions, actions and risks.</p><div class="alab">Watches</div><p class="watch">Records for the reporting period.</p><div class="alab">Hands you</div><ul><li>Deck outline, slide by slide</li><li>Decisions and open risks for the board</li><li>A draft to review before export</li></ul><div class="afoot">For Pro and Team</div></div><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Vendor campaign update <span class="pill-post decide" style="margin:0 0 0 6px;background:var(--ink);color:#fff">New</span></h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Drafts the weekly vendor update for a property campaign from campaign meetings and actions.</p><div class="alab">Watches</div><p class="watch">Campaign meetings and actions tagged to a listing.</p><div class="alab">Hands you</div><ul><li>Weekly update draft, per listing</li><li>What was done and what is next</li><li>Sent only after approval</li></ul><div class="afoot">For Team, for agencies</div></div></div></div>
+<div class="lane"><div class="lane-head"><h3>Keeping records clean and safe</h3><span class="cat">2 agents</span><span class="cm">The quiet work that makes every other agent more accurate.</span></div><div class="agrid"><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Consent check <span class="pill-post decide" style="margin:0 0 0 6px;background:var(--ink);color:#fff">New</span></h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Makes sure every recording or transcript has a consent basis before any workflow runs on it.</p><div class="alab">Watches</div><p class="watch">Saved meetings and their consent records.</p><div class="alab">Hands you</div><ul><li>Meetings with no consent basis</li><li>A hold on runs until it is recorded</li><li>One-click record, confirmed by you</li></ul><div class="afoot">For every plan</div></div><div class="agent"><div class="agent-top"><span class="asig"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8M12 21h7"/></svg></span><div><h4>Record hygiene <span class="pill-post decide" style="margin:0 0 0 6px;background:var(--ink);color:#fff">New</span></h4><span class="pill-post decide">Proposes. You decide</span></div></div><p class="voice">Finds the gaps that weaken everything else: actions with no owner or date, duplicates, risks with no response.</p><div class="alab">Watches</div><p class="watch">The Action Command Hub, decisions and risks.</p><div class="alab">Hands you</div><ul><li>Actions missing an owner or date</li><li>Likely duplicates to merge or keep</li><li>Fixes you confirm, one at a time</li></ul><div class="afoot">For every plan</div></div></div></div>
+      <p class="fine" style="margin-top:26px">Plan labels follow the Workspace design and are indicative until pricing is validated. Third-party apps a workflow can use are named only in Workflows, and Concludo is independent and is not affiliated with or endorsed by any of them.</p>
+      
+    </div>
+  </section>
+
+  <section class="bg-wash">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px"><span class="kicker">The Agents page</span><h2>Thirteen agents, five groups, one switch</h2>
+        <p class="lede" style="margin-top:16px">Agents read your Concludo records and prepare work. Anything that would leave Concludo waits in the Approval Centre for a person, and a single switch in Governance pauses any agent or all of them.</p></div>
+      <div style="max-width:860px;margin-inline:auto"><figure class="window" style="margin:0"><img src="img/shot-agents-full.webp" alt="The full Agents page listing all 13 agents in five groups: before and after the meeting, keeping work moving, seeing risk early, reports and packs, and keeping records clean and safe." width="1600" height="2099" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="auds">
+        <div class="aud"><div class="aud-top"><div class="who">What an agent cannot do</div><h3>Act without a name against it</h3></div>
+          <div class="aud-body"><p>Send a message, assign work to a person, change a decision, delete a record, or reach another system, without an approval recorded against a named person.</p></div></div>
+        <div class="aud"><div class="aud-top"><div class="who">What is kept</div><h3>The whole run, including the ones you refused</h3></div>
+          <div class="aud-body"><p>Every run records what the agent read, what it produced, how long it took, and who approved or declined it. Declined work is kept too.</p></div></div>
+        <div class="aud"><div class="aud-top"><div class="who">Where it waits</div><h3>One queue, one door</h3></div>
+          <div class="aud-body"><p>The Approvals Centre holds anything waiting on you. The agent dashboard shows what has run. Neither can be configured away.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>See them working on your own transcript</h2>
+      <div class="btns" style="margin-top:28px"><a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================= WORKFLOWS ============================= -->
+<div class="page" id="page-workflows" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">Workflow builder</span>
+      <h1 style="max-width:17ch">Say what should happen. <span class="mark">It gets built.</span></h1>
+      <p class="lede" style="margin-top:20px">Automation usually fails at the first step, which is learning the tool. Concludo takes that step out. Describe the outcome in a sentence and the workflow comes back drawn, labelled and written out in plain English, with an approval gate you cannot remove.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
+        <a class="btn btn-line" href="#agents" data-nav="agents">The agents that run inside them</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:48px">
+        <span class="kicker">Two ways to build</span>
+        <h2>Write it, or draw it</h2>
+        <p class="lede" style="margin-top:16px">Both produce the same thing. One of them does not require you to learn anything first.</p>
+      </div>
+
+      <div class="block rev wide">
+        <div class="block-txt">
+          <span class="kicker">In your own words</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Describe it, and see it laid out</h2>
+          <p class="muted">Say what should happen, for example "after every client meeting is saved, draft a follow-up email with the decisions and actions, let me check it, then send it to the client and add the actions to the Action Command Hub". Concludo lays out the steps and adds an approval before anything is sent.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Workflows that score or monitor individuals are refused</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Start from a template, or ask for a change in a sentence</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Checks sit on the workflow itself: approval before the send step, a consent basis, a connected and answering work email</li></ul>
+        </div>
+        <figure class="window" style="margin:0">
+          <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/workflows/new</span></div>
+          <img src="img/shot-wf-build.webp" alt="The Create workflow screen, with a Describe it panel where you say in plain English what should happen and a Build manually panel for dragging steps onto a canvas, plus templates to start from." width="1600" height="1000" loading="eager">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="block">
+        <div class="block-txt">
+          <span class="kicker">On the canvas</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Or build it by hand, and test it first</h2>
+          <p class="muted">Drag steps onto the canvas, or press the plus on a wire to add one. The approval step protects the send step and cannot be removed while it does. A test run previews every step and sends and queues nothing.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Diagram and step views of the same workflow</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Test run shows which steps would run, wait for approval or not send</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Save a working one as a template your team can start from</li></ul>
+        </div>
+        <figure class="window" style="margin:0">
+          <div class="window-bar"><span class="dot3"><i></i><i></i><i></i></span><span class="addr">app.concludo.com.au/workflows/meeting-follow-through</span></div>
+          <img src="img/shot-wf-canvas.webp" alt="A workflow named Follow-up after client meetings described in plain English, with six steps on a canvas from client meeting saved to the Meeting Follow-Up agent, a drafted follow-up email, a required approval, send email and a step that adds actions to the Action Command Hub, and a checks panel." width="1600" height="1000" loading="lazy">
+          <div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:46px">
+        <span class="kicker">Ready made</span>
+        <h2>Eight workflows to start from</h2>
+        <p class="lede" style="margin-top:16px">Each one arrives as a draft, wired to the connections you have approved. Read it, change anything in words, and it still will not run until you say so.</p>
+      </div>
+      <div class="mods"><div class="mod t-gold"><div class="mico"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div><h3>Follow-up after client meetings</h3><p>When a client meeting is saved, Meeting Follow-Up drafts an email from the approved record. You check it first, and once you approve it goes to the client and the actions go to the Action Command Hub.</p></div><div class="mod"><div class="mico"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div><h3>Meeting prep brief</h3><p>Thirty minutes before each client meeting, a one-page brief of what was decided last time and what is still open.</p></div><div class="mod"><div class="mico"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div><h3>Consent check on save</h3><p>When any meeting is saved, checks there is a consent basis and holds the run if there is none.</p></div><div class="mod"><div class="mico"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div><h3>Client promises this week</h3><p>Every Monday at 9:00 am, what you promised clients and which promises are due, as a draft update.</p></div><div class="mod"><div class="mico"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div><h3>Weekly record clean-up</h3><p>Every Monday, the actions with no owner or date and likely duplicates, with fixes for you to confirm.</p></div><div class="mod"><div class="mico"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div><h3>Overdue action nudges</h3><p>Every weekday at 4:00 pm, the overdue and stalled actions, with a drafted nudge held for approval.</p></div><div class="mod"><div class="mico"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div><h3>Monthly board pack</h3><p>On the last Friday of the month, a board pack deck outline from decisions, actions and risks, saved to the project after approval.</p></div><div class="mod"><div class="mico"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div><h3>Weekly vendor update</h3><p>Every Friday at 3:00 pm, a vendor update per listing, held for approval. Needs a listing tag before it can run.</p></div></div>
+      <div class="note" style="margin-top:34px"><p><strong>Templates are starting points, not finished routines.</strong> Each one opens as a draft with its connections unlinked until you approve them, and every step is editable in words. A workflow you have tuned can be saved as a permanent template so the rest of your team starts from the version that works rather than from a blank page.</p></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:44px"><span class="kicker">A worked example</span><h2>Follow-up after client meetings, from trigger to the Hub</h2>
+        <p class="lede" style="margin-top:16px">One routine, written once. The last step adds the approved actions to the Action Command Hub, and the approval step stays in the middle where it cannot be removed.</p></div>
+      <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-bottom:46px"><div class="tile"><div class="num">01 TRIGGER</div><h3>Client meeting saved</h3><p>Any project, client meetings only.</p></div><div class="tile"><div class="num">02 AGENT</div><h3>Meeting Follow-Up</h3><p>Drafts decisions, actions and next steps.</p></div><div class="tile"><div class="num">03 DRAFT</div><h3>Follow-up email</h3><p>Built from the approved record.</p></div><div class="tile"><div class="num">04 APPROVAL</div><h3>You check it first</h3><p>Required, and added automatically.</p></div><div class="tile"><div class="num">05 SEND</div><h3>Email to the client</h3><p>Sent from your connected work email once approved.</p></div><div class="tile" style="background:var(--ink)"><div class="num" style="color:#9FB0C9">06 UPDATE</div><h3 style="color:#fff">Add actions to the Hub</h3><p style="color:#C3D0E4">Tracked with owner, status and due date until they close.</p></div></div>
+      <div class="block"><div class="block-txt">
+          <span class="kicker">Test run</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Preview every step before it can send anything</h2>
+          <p class="muted">A test run lists each step and whether it would run, wait for you, or not send. It uses a sample meeting and sends and queues nothing.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The approval step is shown as "would stop here and wait for you"</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>The send step is shown as "would send after approval, not sent in a test run"</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-wf-test.webp" alt="A test run of a workflow, marked as a preview that sends and queues nothing, listing each step and whether it would run, wait for approval or not send." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block rev"><div class="block-txt">
+          <span class="kicker">Runs and approvals</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Watch it run, and approve it in one place</h2>
+          <p class="muted">Runs shows every run step by step, with filters for waiting, held, failed and completed. A run held for a missing consent basis says so and does not open an incident. Drafts wait in the Approval Centre, where you can edit, reject with a reason, or approve and continue, and the note is kept in the audit log.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A held run explains what to record before it can retry</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Every approval or rejection is kept on the audit record</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-wf-runs.webp" alt="The Runs tab listing live workflow runs step by step, with filters for waiting, held, failed and completed runs, and a run held because no consent basis was recorded." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;align-items:start;margin-top:48px"><figure class="window" style="margin:0"><img src="img/shot-wf-approval.webp" alt="The Approval Centre where a drafted follow-up email waits for a person to edit, reject, or approve and continue, with a note kept in the audit log." width="1600" height="1000" loading="lazy"><div class="window-foot">Approval Centre. Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure><figure class="window" style="margin:0"><img src="img/shot-wf-fix.webp" alt="A workflow check that found a chat app that is not answering, with a Fix it panel listing the checks run and options to sign in again or use a connected app instead." width="1600" height="1000" loading="lazy"><div class="window-foot">Fix it panel. Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="block"><div class="block-txt">
+          <span class="kicker">Governance and connected apps</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">One page to control every workflow and agent</h2>
+          <p class="muted">The Governance Centre counts runs, completions, approvals waiting, failures and open incidents, lists every workflow with an on and off switch, and keeps an audit log. Connected apps shows the status of each app a workflow can use, and a fresh check runs before a workflow turns on and before every live step.</p>
+          <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Always-on rules: an approval before anything leaves Concludo, a pause after three failures in a row, no scoring or monitoring of a person, and a consent basis for every meeting</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>A connection is never treated as working until a check shows it answering</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>One stop button pauses every workflow</li></ul>
+        </div><figure class="window" style="margin:0"><img src="img/shot-wf-gov.webp" alt="The Governance Centre with workflow counts for runs, completed, waiting on approval, failed and open incidents, a list of workflows that can be switched on or off, incidents, always-on rules and an audit log." width="1600" height="1000" loading="lazy"><div class="window-foot">Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+      <div style="max-width:860px;margin:48px auto 0"><figure class="window" style="margin:0"><img src="img/shot-wf-apps.webp" alt="The Connected apps screen showing email, calendar, task, chat and spreadsheet apps a workflow can use, each with a connection status and a Check or Connect button." width="1600" height="1000" loading="lazy"><div class="window-foot">Connected apps. Concludo Workspace design preview. Sample data for a fictional organisation, not live.</div></figure></div>
+      <div class="note" style="margin-top:34px;max-width:940px;margin-inline:auto"><p><strong>What runs today.</strong> Workflow storage is real and most execution is still simulated. The screens on this page are design previews with sample data for a fictional organisation. Outlook, Gmail, Google Calendar, Microsoft To Do, Slack, Microsoft Teams, Google Sheets and HubSpot appear in them only as apps a workflow can use. Concludo is independent and is not affiliated with or endorsed by any of them.</p></div>
+    </div>
+  </section>
+
+  <section class="bg-ink">
+    <div class="wrap">
+      <div class="gov-grid">
+        <div>
+          <span class="kicker">The limits</span>
+          <h2>What the builder will not do, however you word it</h2>
+          <p class="lede" style="margin-top:18px">A natural language builder is only safe if the things it cannot be talked into are enforced in the software rather than in its manners. These four are.</p>
+          <div class="stats">
+            <div class="stat"><div class="n">1</div><div class="l">Approval gate on anything leaving Concludo</div></div>
+            <div class="stat"><div class="n">0</div><div class="l">Workflows that can mark themselves authorised</div></div>
+            <div class="stat"><div class="n">0</div><div class="l">Scores or rankings of people</div></div>
+            <div class="stat"><div class="n">100%</div><div class="l">Of runs written to the audit record</div></div>
+          </div>
+        </div>
+        <div class="rules">
+          <div class="rule-card">
+            <h3>It cannot build away the approval step</h3>
+            <p>Ask it to send without asking, and it will say no and build the version that asks. The contract the workflow engine runs under refuses anything marked as authorised to send.</p>
+          </div>
+          <div class="rule-card">
+            <h3>It cannot connect what you have not approved</h3>
+            <p>A workflow can only reach a connection you signed into yourself, through that provider's own page, with the permissions you granted there. It cannot widen its own access.</p>
+          </div>
+          <div class="rule-card">
+            <h3>It cannot measure a person</h3>
+            <p>No workflow can produce a score, a ranking or a productivity index for an individual. The database schema refuses the column, so it cannot be added by a clever brief.</p>
+          </div>
+          <div class="rule-card">
+            <h3>It keeps the ones you declined</h3>
+            <p>Every run records what it read, what it produced, how long it took and who approved or declined it. Declined work is kept too, because the refusals are the part worth being able to show.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:34px">
+        <span class="kicker">Connections</span>
+        <h2>What a workflow can reach</h2>
+        <p class="lede" style="margin-top:16px">Mail, calendar, documents, files, spreadsheets, tasks, CRM, accounting and outbound webhooks, plus everything inside Concludo itself. You sign in through each provider's own page and approve exactly what Concludo may do there. Concludo never sees your password.</p>
+      </div>
+      <div class="note"><p><strong>Concludo is an independent product.</strong> It is not affiliated with, endorsed by, or partnered with any device maker, meeting platform or note-taking service. Connections in the product screens on this page are shown by what they do rather than by brand, and the account in them is a demonstration account, not a customer. Connections are added progressively and each one shows its own status in the app.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>Describe the routine you keep doing by hand</h2>
+      <p class="lede" style="margin:18px auto 30px;color:#4A3A10">One sentence is enough to find out whether it was worth automating.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
+        <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="#pricing" data-nav="pricing">See what it costs</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================= WORKBOOK ============================= -->
+<div class="page" id="page-workbook" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">Meeting Mastery Workbook</span>
+      <h1 style="max-width:15ch">A manual you work in, not a book about meetings</h1>
+      <p class="lede" style="margin-top:20px">Ten chapters, each with a worked example, a worksheet and a template you can use the same week. It covers the half that software cannot do for you: deciding whether the meeting should exist, costing it, specifying it, and running the follow-up.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px">
+        <span class="kicker">Four ways in, and a free one</span>
+        <h2>The same method, sized to the job</h2>
+        <p class="lede" style="margin-top:16px">Open any one to see the actual pages, what it is for, and who it is sized for. The free sample and the five tools are live now.</p>
+      </div>
+      <div class="edgrid">
+        <div class="edcard">
+          <div class="edshots">
+            <img src="img/wb-s1.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-s2.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-s3.webp" alt="" width="520" height="735" loading="lazy">
+          </div>
+          <div class="edbody">
+            <span class="tier">Meeting Starter Kit</span>
+            <h3>Test the approach on one meeting</h3>
+            <div class="amt">AU$19</div>
+            <div class="per">One-off. Chapter one, four templates, one person.</div>
+            <p class="d">The decision log, the action register, the follow-up email set and the agenda template. Enough to leave your next meeting with a clean decision list.</p>
+            <div class="btns"><a class="btn btn-line btn-sm" href="#wb-starter" data-nav="wb-starter">See inside the Starter Kit</a></div>
+          </div>
+        </div>
+        <div class="edcard best">
+          <div class="edshots">
+            <img src="img/wb-t1.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-t2.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-t3.webp" alt="" width="520" height="735" loading="lazy">
+          </div>
+          <div class="edbody">
+            <span class="badge-best">The whole method</span>
+            <span class="tier">Meeting Mastery Workbook</span>
+            <h3>The complete system, end to end</h3>
+            <div class="amt">AU$59</div>
+            <div class="per">One-off. Ten chapters, 232 pages, fifteen templates.</div>
+            <p class="d">About one hour of a consultant's time. Decision hygiene, the twenty four hour follow-up, the delegation standard and the C1 to C8 implementation section.</p>
+            <div class="btns"><a class="btn btn-gold btn-sm" href="#wb-standard" data-nav="wb-standard">See inside the Workbook</a></div>
+          </div>
+        </div>
+        <div class="edcard">
+          <div class="edshots">
+            <img src="img/wb-p1.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-p2.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-p3.webp" alt="" width="520" height="735" loading="lazy">
+          </div>
+          <div class="edbody">
+            <span class="tier">Team and Practice Licences</span>
+            <h3>Run it across a team, or teach it</h3>
+            <div class="amt">AU$249</div>
+            <div class="per">Team Workbook Licence, one-off, up to ten people. Practice Licence AU$690 a year.</div>
+            <p class="d">The team playbook and rollout checklist for a manager setting one standard. The Facilitator Guide, run sheets and delivery rights for somebody who teaches it.</p>
+            <div class="btns"><a class="btn btn-line btn-sm" href="#wb-pro" data-nav="wb-pro">See both licences</a></div>
+          </div>
+        </div>
+      </div>
+      <p class="fine" style="margin-top:22px">All prices are indicative and in Australian dollars. Concludo Pty Ltd is not registered for GST, so no GST is charged today. The Team Workbook Licence and the Practice Licence carry licence terms that are with an Australian commercial lawyer and are not on sale until that review is finished.</p>
+      <div class="note" style="margin-top:26px"><p><strong>Start with the free sample.</strong> The Meeting Cost Calculator, a sample chapter and two templates cost nothing and need no account. The five tools on this site are the ones most people photocopy out of the Workbook, given away.</p></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px">
+        <span class="kicker">What is in it</span>
+        <h2>Before, during and after</h2>
+      </div>
+      <div class="auds">
+        <div class="aud">
+          <div class="aud-top"><div class="who">Before</div><h3>Should this meeting exist?</h3></div>
+          <div class="aud-body"><p>The decision tree, the cost formula, the agenda written as questions, and the attendee list cut to the people who can actually decide.</p></div>
+        </div>
+        <div class="aud">
+          <div class="aud-top"><div class="who">During</div><h3>Capture that holds up later</h3></div>
+          <div class="aud-body"><p>The Ten Questions framework, the decision log specimen, and how to record a commitment so that it survives the week.</p></div>
+        </div>
+        <div class="aud">
+          <div class="aud-top"><div class="who">After</div><h3>The twenty four hour follow-up</h3></div>
+          <div class="aud-body"><p>The delegation standard, the follow-up structure, consent and recording practice, and turning a transcript into finished work.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>The free tools are a page out of it</h2>
+      <p class="lede" style="margin:18px auto 30px;color:#4A3A10">Use all five, free, with no account. If they earn their place in your week, the Workbook is the rest of the method.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
+        <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Ask about the Workbook</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================= WORKBOOK: STARTER KIT ============================= -->
+<div class="page" id="page-wb-starter" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker"><a href="#workbook" data-nav="workbook" style="text-decoration:none">Meeting Mastery Workbook</a> · Meeting Starter Kit</span>
+      <h1 style="max-width:16ch">Test the approach on <span class="mark">one meeting</span></h1>
+      <p class="lede" style="margin-top:20px">Chapter one plus four print ready templates: the decision log, the action register, the follow-up email set and the agenda template. Priced below the line where anyone has to think about it, so you can find out whether the method is for you before you buy the method.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the free tools first</a>
+        <a class="btn btn-line" href="#wb-standard" data-nav="wb-standard">Compare with the full Workbook</a>
+      </div>
+      <p class="fine" style="margin-top:20px">AU$19 one-off, licensed to one person. Indicative and in Australian dollars. Not on sale yet.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:42px">
+        <span class="kicker">Pages from the Starter Kit</span>
+        <h2>Three of them</h2>
+        <p class="lede" style="margin-top:16px">Not a preview of a book you read. These are pages you write in, and the writing is the point.</p>
+      </div>
+      <div class="pagestrip">
+        <div class="psheet"><figure>
+          <img src="img/wb-s1.webp" alt="Chapter one opener on navy, headed should this meeting exist at all, with the five section contents list." width="520" height="735" loading="eager">
+          <figcaption><div class="pn">Page 11 · Chapter opener</div>
+          <h3>Should this meeting exist at all?</h3>
+          <p>The chapter opens with the argument stated plainly and the sections listed, so you can find the one page you need in a hurry rather than reading from the front.</p></figcaption>
+        </figure></div>
+        <div class="psheet"><figure>
+          <img src="img/wb-s2.webp" alt="Worksheet page, the three question filter, with three numbered questions each followed by writing lines, a worked example and a callout headed the honest test." width="520" height="735" loading="lazy">
+          <figcaption><div class="pn">Page 14 · Tool 1</div>
+          <h3>The three question filter</h3>
+          <p>Run it before you send the invitation. If a meeting cannot answer all three clearly, it is a message or a shared document. There is room to write, because answering it in your head does not count.</p></figcaption>
+        </figure></div>
+        <div class="psheet"><figure>
+          <img src="img/wb-s3.webp" alt="Worksheet page, what this meeting costs, with a blank cost table by role, a then multiply section, an illustrative example and a callout headed use it carefully." width="520" height="735" loading="lazy">
+          <figcaption><div class="pn">Page 19 · Tool 2</div>
+          <h3>What this meeting costs</h3>
+          <p>Arithmetic on your own numbers, written down where the person who called the meeting can see it. The page is explicit that this is a cost and not a saving, because the two get confused and the confusion is expensive.</p></figcaption>
+        </figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px">
+        <span class="kicker">What is in it</span>
+        <h2>One chapter, four templates</h2>
+      </div>
+      <div class="tiles">
+        <div class="tile"><div class="num">CH 1</div><h3>Should this meeting exist?</h3><p>The three question filter, the cost worksheet, and what to do with each answer.</p></div>
+        <div class="tile"><div class="num">T 1</div><h3>Decision log</h3><p>Every decision with an owner, a date and one line on why it matters.</p></div>
+        <div class="tile"><div class="num">T 2</div><h3>Action register</h3><p>What was promised, by whom, by when, and whether it has moved.</p></div>
+        <div class="tile"><div class="num">T 3 &amp; 4</div><h3>Follow-up email set and agenda</h3><p>The five line follow-up in three variants, and the agenda written as questions.</p></div>
+      </div>
+      <div class="note" style="margin-top:30px"><p><strong>Who the Starter Kit is for.</strong> A consultant or coach testing whether the approach survives contact with their own week. If you already know you want the method, the Workbook at AU$59 is better value and roughly one billable hour.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>Or start with the free tools, which cost nothing</h2>
+      <div class="btns" style="margin-top:28px">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
+        <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Ask about the Starter Kit</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================= WORKBOOK: FULL ============================= -->
+<div class="page" id="page-wb-standard" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker"><a href="#workbook" data-nav="workbook" style="text-decoration:none">Meeting Mastery Workbook</a> · the full Workbook</span>
+      <h1 style="max-width:16ch">The complete system, <span class="mark">end to end</span></h1>
+      <p class="lede" style="margin-top:20px">All ten chapters. Two hundred and thirty two pages, fifteen print ready templates, fillable worksheets, and the C1 to C8 implementation section that turns a good idea into the way an office works.</p>
+      <div class="btns">
+        <a class="btn btn-gold" href="#tools" data-nav="tools">Try the free tools first</a>
+        <a class="btn btn-line" href="#wb-pro" data-nav="wb-pro">Licences for a team</a>
+      </div>
+      <p class="fine" style="margin-top:20px">AU$59 one-off, licensed to one person for internal and client work. Indicative and in Australian dollars. Not on sale yet.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:42px">
+        <span class="kicker">Pages from the Workbook</span>
+        <h2>Three of the two hundred and thirty two</h2>
+        <p class="lede" style="margin-top:16px">The three pages most people photocopy, which is why they are the three shown here.</p>
+      </div>
+      <div class="pagestrip">
+        <div class="psheet"><figure>
+          <img src="img/wb-t1.webp" alt="Worksheet page, the decision to action capture, with a blank five row table for decision, owner, due date and why it matters, two worked examples and a callout on the three failures it prevents." width="520" height="735" loading="eager">
+          <figcaption><div class="pn">Page 118 · Tool 7</div>
+          <h3>The decision to action capture</h3>
+          <p>The single habit that changes the most. Every decision gets an owner, a date and one line on why it matters, because a decision with no owner and no date is a wish.</p></figcaption>
+        </figure></div>
+        <div class="psheet"><figure>
+          <img src="img/wb-t2.webp" alt="Template page, the five line follow-up, with five labelled fields each followed by writing lines, and two callouts." width="520" height="735" loading="lazy">
+          <figcaption><div class="pn">Page 171 · Tool 9</div>
+          <h3>The five line follow-up</h3>
+          <p>Purpose, decisions, actions, open questions, next contact. Sent within the hour while the meeting is still warm. Short enough to fit in a preview pane, which is where the correction actually happens.</p></figcaption>
+        </figure></div>
+        <div class="psheet"><figure>
+          <img src="img/wb-t3.webp" alt="Implementation page, handing something over so it stays handed over, with a four step sequence, a written script, a blank handover table and a callout on why the fourth line matters most." width="520" height="735" loading="lazy">
+          <figcaption><div class="pn">Page 204 · Implementation C5</div>
+          <h3>The delegation standard</h3>
+          <p>Four things have to be said out loud when you hand something over, and the fourth, what they do if it slips, is the one almost everybody leaves out. It is also the only one that protects the date.</p></figcaption>
+        </figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px">
+        <span class="kicker">Everything in the Starter Kit, and then</span>
+        <h2>Nine more chapters and the implementation section</h2>
+      </div>
+      <div class="mods">
+        <div class="mod t-gold">
+          <div class="mico"><svg viewBox="0 0 24 24"><path d="M12 3l5 5-5 5-5-5z"/><path d="M12 13v8"/></svg></div>
+          <h3>Decision hygiene</h3>
+          <p>How agreements quietly dissolve the moment a call ends, and the capture habit that stops it. Includes the decision log specimens.</p>
+        </div>
+        <div class="mod">
+          <div class="mico"><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg></div>
+          <h3>The twenty four hour follow-up</h3>
+          <p>The structure, the timing, and why a long follow-up corrects nothing. The five line template and the three variants.</p>
+        </div>
+        <div class="mod t-mist">
+          <div class="mico"><svg viewBox="0 0 24 24"><path d="M4 7l3 3 5-6M4 17l3 3 5-6M14 9h6M14 19h6"/></svg></div>
+          <h3>The delegation standard</h3>
+          <p>Handing work over so it stays handed over, with the escalation line that protects the date.</p>
+        </div>
+        <div class="mod t-mist">
+          <div class="mico"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Consent and capture</h3>
+          <p>What to say before you record, what consent requires in an Australian workplace, and how to handle the transcript afterwards. General information only, not legal advice.</p>
+        </div>
+        <div class="mod">
+          <div class="mico"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+          <h3>The meeting free alternatives</h3>
+          <p>When a message, a document or an asynchronous update beats a live call, and how to make the swap without looking evasive.</p>
+        </div>
+        <div class="mod t-gold">
+          <div class="mico"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div>
+          <h3>Implementation, C1 to C8</h3>
+          <p>Eight ordered steps for rolling the standard across an office, each with an owner, a measure and a gate at which you stop and decide whether to continue.</p>
+        </div>
+      </div>
+      <div class="note" style="margin-top:30px"><p><strong>Who the Workbook is for.</strong> Somebody who intends to change how a team works, not only how their own week looks. The implementation section is the difference, and it is the part people come back to in month three.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>The whole method, in one book you write in</h2>
+      <div class="btns" style="margin-top:28px">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
+        <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="#wb-pro" data-nav="wb-pro">Licences for a team</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================= WORKBOOK: LICENCES ============================= -->
+<div class="page" id="page-wb-pro" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker"><a href="#workbook" data-nav="workbook" style="text-decoration:none">Meeting Mastery Workbook</a> · Team and Practice Licences</span>
+      <h1 style="max-width:18ch">Run it across a team, or <span class="mark">teach it to clients</span></h1>
+      <p class="lede" style="margin-top:20px">Two licences beyond the single person edition, doing two different jobs. One sets a standard inside an organisation. The other carries the right to deliver the method to somebody else's. Neither allows resale.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the free tools first</a>
+        <a class="btn btn-line" href="#pricing" data-nav="pricing">See all the prices</a>
+      </div>
+      <p class="fine" style="margin-top:20px">Both licence documents are with an Australian commercial lawyer and are not on sale until that review is finished. Prices indicative and in Australian dollars.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px">
+        <span class="kicker">The two</span>
+        <h2>Which one you need</h2>
+      </div>
+      <div class="prices prices-2" style="max-width:860px;margin-inline:auto">
+        <div class="price">
+          <span class="tier">Team Workbook Licence</span>
+          <div class="amt">AU$249</div>
+          <div class="per">One-off. One organisation, up to ten people, internal use.</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>The full Workbook for everyone covered</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>The team playbook and the rollout checklist</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Cheaper per person than ten copies</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>No delivery rights. Internal use only</li>
+          </ul>
+          <a class="btn btn-line" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Ask about the Team Licence</a>
+        </div>
+        <div class="price best">
+          <span class="badge-best">Carries delivery rights</span>
+          <span class="tier">Practice Licence</span>
+          <div class="amt">AU$690</div>
+          <div class="per">A year. Up to three delivery staff.</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Everything in the Team Licence</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>The Facilitator Guide and four session run sheets</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>An editable slide outline in your own branding</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>The right to charge for sessions you deliver under it</li>
+          </ul>
+          <a class="btn btn-gold" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Ask about the Practice Licence</a>
+        </div>
+      </div>
+      <p class="fine" style="margin-top:22px">Neither licence permits resale of the material, sublicensing, or presenting the method as your own. The Team Licence carries no delivery rights at all. All prices are indicative and in Australian dollars. Concludo Pty Ltd is not registered for GST, so no GST is charged today.</p>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:42px">
+        <span class="kicker">Pages from the licensed editions</span>
+        <h2>What a facilitator actually holds</h2>
+        <p class="lede" style="margin-top:16px">Somebody in your office runs the sessions. These are the pages they run them from.</p>
+      </div>
+      <div class="pagestrip">
+        <div class="psheet"><figure>
+          <img src="img/wb-p1.webp" alt="Facilitator Guide run sheet for session two, a ninety minute timetable from zero to one hour twenty five with what happens and who leads each segment, plus callouts on the failure mode to avoid and the materials needed." width="520" height="735" loading="eager">
+          <figcaption><div class="pn">Page F-23 · Facilitator Guide</div>
+          <h3>Session two, minute by minute</h3>
+          <p>A run sheet, not a lesson plan. It says what happens at each point, who leads it, and which moment the session turns on. It also names the failure mode, because every facilitator hits the same one. Practice Licence only.</p></figcaption>
+        </figure></div>
+        <div class="psheet"><figure>
+          <img src="img/wb-p2.webp" alt="Implementation page, rolling the standard across an office, with an eight step table from C1 to C8 giving what each step is and the gate it has to clear, and a callout explaining why step C3 says three." width="520" height="735" loading="lazy">
+          <figcaption><div class="pn">Page 226 · C1 to C8</div>
+          <h3>Rolling the standard across an office</h3>
+          <p>Eight steps in order, each with a gate at which you stop and decide whether to continue. The order matters more than the speed, and the page says why. In both licences.</p></figcaption>
+        </figure></div>
+        <div class="psheet"><figure>
+          <img src="img/wb-p3.webp" alt="Licence page, two licences beyond one person, with four boxes for the Team Workbook Licence, the Practice Licence, what neither allows and the term, a list of what comes with each, and a note that both are under legal review." width="520" height="735" loading="lazy">
+          <figcaption><div class="pn">Page iv · Licence and scope</div>
+          <h3>What each licence actually covers</h3>
+          <p>Printed at the front, not buried. What you may do, what you may not, who is covered and for how long, in four boxes so nobody has to interpret them.</p></figcaption>
+        </figure></div>
+      </div>
+      <div class="note" style="margin-top:34px"><p><strong>What is not for sale.</strong> Concludo does not run facilitated workshops, team onboarding or meeting workflow audits today, and nothing on this page should be read as an offer to run one. The Practice Licence licences your own people to run the sessions themselves.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>One standard, taught by your own people</h2>
+      <div class="btns" style="margin-top:28px">
+        <a class="btn btn-primary" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Ask about the licences</a>
+        <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="#wb-standard" data-nav="wb-standard">One person needs only the Workbook</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-tools" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">Free tools</span>
+      <h1 style="max-width:14ch">Five tools. <span class="mark">No account, no card.</span></h1>
+      <p class="lede" style="margin-top:20px">All five run here in your browser. Nothing you type is sent anywhere, stored or seen by Concludo. Every figure is arithmetic on the numbers you put in, and none of it is a claim by Concludo about your business.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="max-width:960px">
+
+      <details class="tool" id="tool-cost" open>
+        <summary>
+          <span class="tico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h3M8 15h3M15 11v4"/></svg></span>
+          <span><h3>Meeting Cost Calculator</h3><p>What one sitting costs, and what it costs across a year. Usually the start of a different conversation about the recurring meeting nobody wants to cancel.</p></span>
+        </summary>
+        <div class="body">
+          <div class="frow f">
+            <div><label for="c-n">People in the room</label><input id="c-n" type="number" min="1" max="200" step="1" value="8"></div>
+            <div><label for="c-r">Average hourly cost, AU$</label><input id="c-r" type="number" min="0" max="2000" step="5" value="95"></div>
+            <div><label for="c-m">Length, minutes</label><input id="c-m" type="number" min="5" max="480" step="5" value="60"></div>
+            <div><label for="c-f">How often</label><select id="c-f">
+              <option value="46">Weekly, 46 times a year</option>
+              <option value="23">Fortnightly, 23 times a year</option>
+              <option value="12">Monthly, 12 times a year</option>
+              <option value="4">Quarterly, 4 times a year</option>
+              <option value="1">Once</option>
+            </select></div>
+            <div><label for="c-p">Preparation, minutes each</label><input id="c-p" type="number" min="0" max="240" step="5" value="10"></div>
+          </div>
+          <div class="out">
+            <div class="cap">One sitting, including preparation</div>
+            <div class="big" id="c-one">AU$0</div>
+            <div class="sub" id="c-hrs">0 people hours</div>
+            <p><strong id="c-yr">AU$0</strong> a year at the frequency you chose. Illustrative, calculated from your inputs only.</p>
+          </div>
+          <p class="fine" style="margin-top:14px">This is a cost, not a saving. Cancelling the meeting does not put the money back. What the number does is make the trade-off visible, so keeping the meeting becomes a decision rather than a habit.</p>
+        </div>
+      </details>
+
+      <details class="tool" id="tool-ten">
+        <summary>
+          <span class="tico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.6 2.6 0 115 .9c0 1.7-2.5 2-2.5 3.6M12 17.5h.01"/></svg></span>
+          <span><h3>The Ten Questions</h3><p>Answer these before you send the invitation. If you cannot answer the first four, the meeting is not ready, and the honest move is to answer them in writing instead.</p></span>
+        </summary>
+        <div class="body">
+          <ul class="qlist" id="ten"></ul>
+          <div class="out verdict" id="ten-out">
+            <div class="cap">Verdict</div>
+            <div id="ten-v" style="font-size:18px;font-weight:600;line-height:1.5">Tick what you can answer right now.</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="tool" id="tool-audit">
+        <summary>
+          <span class="tico"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><path d="M8 4v4M16 10v4"/></svg></span>
+          <span><h3>Meeting Audit Scorecard</h3><p>Mark one recurring meeting out of twenty four. It scores the meeting, never the people in it. Run it across a fortnight of your own calendar and it tends to find the same three sessions in every organisation.</p></span>
+        </summary>
+        <div class="body">
+          <div id="audit"></div>
+          <div class="out verdict" id="aud-out" style="margin-top:18px">
+            <div class="cap">Score, out of 24</div>
+            <div class="big" id="aud-n">0</div>
+            <div id="aud-v" style="font-size:16px;margin-top:10px;line-height:1.6"></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="tool" id="tool-consent">
+        <summary>
+          <span class="tico"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <span><h3>Responsible Capture Checklist</h3><p>What to say before you record, and what to do with the transcript afterwards. Tick what is true and it writes you the sentence to say at the top of the call.</p></span>
+        </summary>
+        <div class="body">
+          <ul class="qlist" id="consent"></ul>
+          <div class="out">
+            <div class="cap">What to say before you start</div>
+            <div class="script" id="consent-script"></div>
+            <div class="toolbtns"><button class="copybtn" type="button" data-copy-el="consent-script">Copy the script</button></div>
+          </div>
+          <p class="fine" style="margin-top:14px">General information only, not legal advice. Recording law in Australia differs between states and between private and workplace conversations. If anything about a recording matters commercially, take advice before you press record.</p>
+        </div>
+      </details>
+
+      <details class="tool" id="tool-deleg">
+        <summary>
+          <span class="tico"><svg viewBox="0 0 24 24"><path d="M4 7l3 3 5-6M4 17l3 3 5-6M14 9h6M14 19h6"/></svg></span>
+          <span><h3>Delegation Script Pack</h3><p>Four things have to be said when you hand something over, and the fourth is the one almost everybody leaves out. Fill these in and it writes the handover for you.</p></span>
+        </summary>
+        <div class="body">
+          <div class="frow f">
+            <div><label for="d-who">Who owns it, one name</label><input id="d-who" type="text" maxlength="60" placeholder="Priya"></div>
+            <div><label for="d-what">What they own</label><input id="d-what" type="text" maxlength="120" placeholder="the community notification letter"></div>
+            <div><label for="d-done">What finished looks like</label><input id="d-done" type="text" maxlength="180" placeholder="a plain English draft with Legal's comments already in it"></div>
+            <div><label for="d-due">Due date, as a date</label><input id="d-due" type="text" maxlength="60" placeholder="Tuesday 27 October"></div>
+            <div><label for="d-slip">If it slips, who they tell and by when</label><input id="d-slip" type="text" maxlength="120" placeholder="tell me by Friday"></div>
+            <div><label for="d-why">Why the date matters</label><input id="d-why" type="text" maxlength="160" placeholder="the board paper closes on the 28th"></div>
+          </div>
+          <div class="out">
+            <div class="cap">Your handover, word for word</div>
+            <div class="script" id="d-script"></div>
+            <div class="toolbtns"><button class="copybtn" type="button" data-copy-el="d-script">Copy the script</button></div>
+          </div>
+          <p class="fine" style="margin-top:14px">The first three lines set expectations. The fourth sets the escalation, and escalation is the only part that protects the date. Without it you find out on the due date, which is the one day it is too late to do anything useful.</p>
+        </div>
+      </details>
+
+      <div class="note" style="margin-top:30px"><p><strong>Nothing you type here leaves your browser.</strong> These tools run entirely on this page. There is no account, no sign-in, no tracking of what you enter and no copy kept by Concludo. Figures are calculated from your own inputs and are illustrative. Concludo holds no customer data and publishes no benchmarks.</p></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center">
+        <span class="kicker">After the tools</span>
+        <h2>The tools fix the meeting. The method fixes the follow-through.</h2>
+        <p class="lede" style="margin:16px auto 28px">Every tool on this page is a page out of the Meeting Mastery Workbook. The free sample chapter and two of the templates come with them.</p>
+        <div class="btns center" style="justify-content:center">
+          <a class="btn btn-primary" href="#workbook" data-nav="workbook">See the Workbook, from AU$19</a>
+          <a class="btn btn-line" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest in the Workspace</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================= PRICING ============================= -->
+<div class="page" id="page-pricing" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">Pricing</span>
+      <h1 style="max-width:14ch">Priced so one person can start</h1>
+      <p class="lede" style="margin-top:20px">A subscription for the software, a one-off for the method, and licences when a whole practice needs to work the same way. Every price below is indicative and is being tested with real buyers before anything is published as final.</p>
+      <div class="note" style="margin-top:28px;max-width:760px"><p><strong>Nothing here can be bought yet.</strong> The Workspace is in build and is not open for sale. These prices are published so you can tell us whether they are wrong. The five free tools are live and need no account.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px">
+        <span class="kicker">Workspace subscriptions</span>
+        <h2>The software</h2>
+        <p class="lede" style="margin-top:16px">The plans differ by who uses them, how much they use, how many people collaborate and how much control they need. No plan hides a core feature to force an upgrade.</p>
+      </div>
+      <div class="prices" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+        <div class="price">
+          <span class="tier">Starter subscription</span>
+          <div class="amt">AU$25</div>
+          <div class="per">A month, one seat. Or AU$250 a year, two months free.</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Individual with occasional meetings or a single client</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Twenty processed transcripts a month, three projects</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Meeting output document, summary, decision log, action plan, action tracker, search</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>One connected account. Export and delete your data</li>
+          </ul>
+          <a class="btn btn-line" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest</a>
+        </div>
+        <div class="price best">
+          <span class="badge-best">Where most people start</span>
+          <span class="tier">Pro subscription</span>
+          <div class="amt">AU$59</div>
+          <div class="per">A month, one seat. Or AU$590 a year, two months free.</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Consultant, coach or adviser with ongoing client work</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>One hundred transcripts a month, unlimited projects</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Follow-up email, client deck and action timeline. Decision memory across clients, and the calendar</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Three connected accounts, audit of your own actions</li>
+          </ul>
+          <a class="btn btn-gold" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest</a>
+        </div>
+        <div class="price">
+          <span class="tier">Team subscription</span>
+          <div class="amt">AU$49</div>
+          <div class="per">A seat a month, three seat minimum, so from AU$147 a month. Or AU$490 a seat a year.</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Firm or department of three to twenty people</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>One hundred transcripts a seat a month, pooled</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Roles, shared projects, comments, assignments, approvals</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Admin console, seat management, audit log, retention rules</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>No individual scoring, by design and by schema</li>
+          </ul>
+          <a class="btn btn-line" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest</a>
+        </div>
+        <div class="price" style="background:var(--ink);border-color:var(--ink)">
+          <span class="tier" style="color:var(--gold)">Enterprise</span>
+          <div class="amt" style="color:#fff">AU$18,000</div>
+          <div class="per" style="color:#C3D0E4">From, a year, by quote. Typically twenty five seats or more, annual contract.</div>
+          <ul>
+            <li style="color:#DCE5F2"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Organisation with procurement, security or scale needs</li>
+            <li style="color:#DCE5F2"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Pooled allowance, departments and multiple workspaces</li>
+            <li style="color:#DCE5F2"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Custom retention, review and approval policies</li>
+            <li style="color:#DCE5F2"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Named contact, agreed response times, onboarding included</li>
+          </ul>
+          <a class="btn btn-line" style="border-color:rgba(255,255,255,.45);color:#fff;background:transparent" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Talk to us</a>
+        </div>
+      </div>
+      <p class="fine" style="margin-top:22px">All prices are indicative and in Australian dollars. Concludo Pty Ltd is not registered for GST, so no GST is charged today. Enterprise would be quoted excluding GST. Annual billing is two months free, about seventeen per cent.</p>
+      <div class="note" style="margin-top:26px"><p><strong>The Enterprise plan is a design, not a product.</strong> It does not exist in the software today. Single sign-on, usage limits and seat enforcement are not built, and Enterprise would only be sold once those, signed data processing terms, insurance and a security review all exist. It is published here so an organisation can tell us whether the shape is right.</p></div>
+      <div class="note" style="margin-top:20px"><p><strong>Intended plan terms, when the Workspace opens.</strong> A 14 day free trial with no card, with full Pro subscription features. No permanent free plan. Annual billing gives two months free. The first 25 paying accounts would receive 25% off for their first 12 months, and no other discount stacks with it. These terms are published so you can challenge them. None is on offer today.</p></div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:34px">
+        <span class="kicker">The method</span>
+        <h2>Workbooks and licences</h2>
+        <p class="lede" style="margin-top:16px">Separate products with their own licences, sold on their own. A workbook is never bundled automatically into a Workspace plan.</p>
+      </div>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Product</th><th>What it covers</th><th>Licence</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><td>Free sample and tools</td><td>Meeting Cost Calculator, sample chapter, two templates</td><td>Personal use</td><td class="num">AU$0</td></tr>
+            <tr><td>Meeting Starter Kit</td><td>Chapter one, decision log, action register, follow-up email set, agenda template</td><td>One person</td><td class="num">AU$19 one-off</td></tr>
+            <tr><td>Meeting Mastery Workbook</td><td>All ten chapters, 232 pages, worksheets, templates, free tools</td><td>One person, internal and client work</td><td class="num">AU$59 one-off</td></tr>
+            <tr><td>Team Workbook Licence</td><td>The Workbook plus the team playbook and rollout checklist</td><td>One organisation, up to ten people, internal use</td><td class="num">AU$249 one-off</td></tr>
+            <tr><td>Practice Licence</td><td>Workbook, facilitator guide, slide outline and delivery rights</td><td>Up to three delivery staff, no resale</td><td class="num">AU$690 a year</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine" style="margin-top:20px">All prices are indicative and in Australian dollars. Concludo Pty Ltd is not registered for GST, so no GST is charged today. The Team Workbook Licence and the Practice Licence carry licence terms that are under legal review and are not on sale until that review is finished.</p>
+      <div class="note" style="margin-top:26px"><p><strong>The workbook credit.</strong> A buyer of the Starter Kit or the Workbook may apply what they paid against their first two months of a Starter or Pro subscription, once. It is an optional offer rather than a bundle, and it has to be asked for.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center" style="margin-bottom:34px">
+        <span class="kicker">What is not for sale</span>
+        <h2>The honest list</h2>
+      </div>
+      <div class="auds">
+        <div class="aud"><div class="aud-top"><div class="who">Not open</div><h3>Workspace subscriptions</h3></div>
+          <div class="aud-body"><p>The Workspace is built and partly working, and it is not yet billable. There is no checkout, no trial signup and no payment on this site. When that changes, this page will say so and the prices will have been tested with buyers first.</p></div></div>
+        <div class="aud"><div class="aud-top"><div class="who">Not built</div><h3>Four named features</h3></div>
+          <div class="aud-body"><p>Branded PowerPoint export, the client deck, the action timeline, follow-up email drafting, single sign-on, and usage limit enforcement. They appear in the plan designs above because that is where they will sit. They are not claimed anywhere on this site as working.</p></div></div>
+        <div class="aud"><div class="aud-top"><div class="who">Not offered</div><h3>Workshops and audits</h3></div>
+          <div class="aud-body"><p>Facilitated workshops, team onboarding and meeting workflow audits are planned as fixed-scope services. None of them can be bought today, and nothing on this site should be read as an offer to run one.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>Tell us which number is wrong</h2>
+      <p class="lede" style="margin:18px auto 30px;color:#4A3A10">Prices stay indicative until buyers confirm them. If one of these is off, the useful thing you can do today is say so.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest</a>
+        <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="#tools" data-nav="tools">Try the free tools</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================= ABOUT ============================= -->
+<div class="page" id="page-about" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">About</span>
+      <h1 style="max-width:16ch">An Australian company building one thing properly</h1>
+      <p class="lede" style="margin-top:20px">Concludo Pty Ltd is a registered Australian company based in Melbourne. It builds a method and a machine: a teachable way of running fewer, better meetings, and paste-first software that turns any transcript into finished work.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="block">
+        <div class="block-txt">
+          <span class="kicker">Where things stand</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">What is true today, and nothing more</h2>
+          <p class="muted" style="margin-top:16px">Concludo is pre-revenue and in build. The Workspace runs and does real work, and it is not yet billable or open to customers. The five free tools are live and open to anyone. There are no customers, pilots, case studies or revenue, and you will not find any claimed on this site. When there are, they will appear with the permission of the people they belong to.</p>
+          <p class="muted" style="margin-top:14px">Prices are published as indicative and stay open to revision until real buyers confirm them. Facilitated workshops, team onboarding and meeting workflow audits are planned and are not for sale. Everything the Workspace produces today is rule-based: no language model is called anywhere in the product yet.</p>
+          <p class="muted" style="margin-top:14px">That is a slower way to launch a product. It is also the only version of this page that would still be true in a year.</p>
+        </div>
+        <div class="tiles" style="grid-template-columns:1fr">
+          <div class="tile"><h3>Concludo Pty Ltd</h3><p>ACN 701 605 898. Melbourne, Australia. Australian English, Australian time zones.</p></div>
+          <div class="tile"><h3>What it will not do</h3><p>Score or rank an individual. Send anything without approval. Claim a result it cannot show you the record for.</p></div>
+          <div class="tile"><h3>Independent by design</h3><p>Not affiliated with, endorsed by, or partnered with any device maker, meeting platform or note-taking service. Capture on whatever you already use.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist">
+    <div class="wrap">
+      <div class="center">
+        <span class="kicker">Contact</span>
+        <h2>A person answers this inbox</h2>
+        <p class="lede" style="margin:16px auto 28px">Questions, a demand for evidence, or something that looks wrong on this site. All of it reaches the same place.</p>
+        <div class="tile" style="max-width:480px;margin-inline:auto;text-align:left">
+          <h3 style="font-size:16px;margin-bottom:10px">Email</h3>
+          <div class="mailrow">
+            <span class="mail">hello@concludo.au</span>
+            <button class="copybtn" type="button" data-copy="hello@concludo.au">Copy address</button>
+          </div>
+          <p class="fine" style="margin-top:14px">Concludo Pty Ltd, Melbourne, Australia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap center">
+      <h2>See it rather than read about it</h2>
+      <div class="btns" style="margin-top:28px">
+        <a class="btn btn-primary" href="#tools" data-nav="tools">Try the five free tools</a>
+        <a class="btn btn-line" style="border-color:rgba(22,38,63,.4)" href="#tools" data-nav="tools">Start with a free tool</a>
+      </div>
+    </div>
+  </section>
+</div>
+
 </main>
+
 <footer>
   <div class="wrap">
     <div class="fgrid">
       <div class="fcol">
-        <a class="brand" href="/" style="margin-bottom:14px">
-          <img src="/img/mark.webp" alt="" width="28" height="31"><span>Concludo</span>
+        <a class="brand" href="#home" data-nav="home" style="margin-bottom:14px">
+          <img src="img/mark.webp" alt="" width="28" height="31"><span>Concludo</span>
         </a>
         <p class="fine" style="max-width:34ch">Turn every conversation into finished work. Capture on anything, paste it in, and leave with decisions, actions and a plan.</p>
         <h4 style="margin-top:22px">Questions?</h4>
@@ -1035,22 +2240,22 @@ footer>.wrap{padding-block:50px}
       <div class="fcol">
         <h4>Product</h4>
         <ul>
-          <li><a href="/workspace/">The Workspace</a></li>
-          <li><a href="/ai-agents/">AI agents</a></li>
-          <li><a href="/workflow-builder/">Workflow builder</a></li>
-          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="#workspace" data-nav="workspace">The Workspace</a></li>
+          <li><a href="#agents" data-nav="agents">AI agents</a></li>
+          <li><a href="#workflows" data-nav="workflows">Workflow builder</a></li>
+          <li><a href="#pricing" data-nav="pricing">Pricing</a></li>
           <li><a href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest</a></li>
         </ul>
       </div>
       <div class="fcol">
         <h4>Learn</h4>
         <ul>
-          <li><a href="/meeting-mastery-workbook/">Meeting Mastery Workbook</a></li>
-          <li><a href="/meeting-mastery-workbook/starter-edition/">Meeting Starter Kit</a></li>
-          <li><a href="/meeting-mastery-workbook/standard-edition/">The full Workbook</a></li>
-          <li><a href="/meeting-mastery-workbook/pro-edition/">Team and Practice Licences</a></li>
-          <li><a href="/free-tools/">Free tools</a></li>
-          <li><a href="/about/">About Concludo</a></li>
+          <li><a href="#workbook" data-nav="workbook">Meeting Mastery Workbook</a></li>
+          <li><a href="#wb-starter" data-nav="wb-starter">Meeting Starter Kit</a></li>
+          <li><a href="#wb-standard" data-nav="wb-standard">The full Workbook</a></li>
+          <li><a href="#wb-pro" data-nav="wb-pro">Team and Practice Licences</a></li>
+          <li><a href="#tools" data-nav="tools">Free tools</a></li>
+          <li><a href="#about" data-nav="about">About Concludo</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -1077,18 +2282,66 @@ footer>.wrap{padding-block:50px}
     </div>
   </div>
 </footer>
+
 <script>
-document.addEventListener('click',function(e){
-  var b=e.target.closest?e.target.closest('[data-copy]'):null;
-  if(!b) return;
-  var text=b.getAttribute('data-copy');
-  var done=function(msg){ var old=b.textContent; b.textContent=msg;
-    setTimeout(function(){ b.textContent=old; },1800); };
-  try{
-    navigator.clipboard.writeText(text).then(function(){ done('Copied'); })
-      .catch(function(){ done('Select it'); });
-  }catch(err){ done('Select it'); }
-});
+(function(){
+  var PAGES=['home','workspace','agents','workflows','workbook','wb-starter','wb-standard','wb-pro',
+    'tools','pricing','about'];
+  var TITLES={home:'Concludo',workspace:'Concludo Workspace',agents:'Concludo AI agents',
+    workflows:'Concludo workflow builder',
+    workbook:'Meeting Mastery Workbook',
+    'wb-starter':'Meeting Starter Kit',
+    'wb-standard':'The Meeting Mastery Workbook',
+    'wb-pro':'Workbook Team and Practice Licences',
+    tools:'Concludo free tools',pricing:'Concludo pricing',about:'About Concludo'};
+
+  function show(name,push){
+    if(PAGES.indexOf(name)===-1) name='home';
+    PAGES.forEach(function(p){
+      var el=document.getElementById('page-'+p);
+      if(el) el.hidden=(p!==name);
+    });
+    /* The three Workbook edition pages are not in the nav, so the Workbook link
+       stays marked while one of them is open. */
+    var PARENT={'wb-starter':'workbook','wb-standard':'workbook','wb-pro':'workbook'};
+    var lit=PARENT[name]||name;
+    document.querySelectorAll('.nav-links a').forEach(function(a){
+      if(a.getAttribute('data-nav')===lit) a.setAttribute('aria-current','page');
+      else a.removeAttribute('aria-current');
+    });
+    document.title=TITLES[name]||'Concludo';
+    if(push){ try{ history.replaceState(null,'','#'+name); }catch(e){} }
+    window.scrollTo({top:0,behavior:'auto'});
+  }
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('a[data-nav]'):null;
+    if(!a) return;
+    e.preventDefault();
+    show(a.getAttribute('data-nav'),true);
+  });
+
+  window.addEventListener('hashchange',function(){
+    show((location.hash||'#home').slice(1),false);
+  });
+
+  /* Clipboard is refused in some viewers, so the address is selectable text and
+     the button falls back to telling the reader to select it. */
+  document.addEventListener('click',function(e){
+    var b=e.target.closest?e.target.closest('[data-copy]'):null;
+    if(!b) return;
+    var text=b.getAttribute('data-copy');
+    var done=function(msg){ var old=b.textContent; b.textContent=msg;
+      setTimeout(function(){ b.textContent=old; },1800); };
+    try{
+      navigator.clipboard.writeText(text).then(function(){ done('Copied'); })
+        .catch(function(){ done('Select it'); });
+    }catch(err){ done('Select it'); }
+  });
+
+  show((location.hash||'#home').slice(1).split('?')[0]||'home',false);
+})();
+
 /* ============================================================
    The five free tools. Everything runs here, in the browser.
    Nothing is sent anywhere and nothing is stored.
@@ -1294,5 +2547,4 @@ document.addEventListener('click',function(e){
   });
 })();
 </script>
-</body>
-</html>
+</body></html>

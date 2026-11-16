@@ -6,6 +6,27 @@
 <title>Page not found, Concludo</title>
 <meta name="description" content="Paste a transcript from any recorder, pen or meeting platform. Concludo drafts the summary, action items, follow-up email, decision log, action plan and branded deck, and waits for you to approve it.">
 <meta name="robots" content="noindex">
+<script>
+(function(){
+  var p = location.pathname.replace(/^\/|\/$/g, '');
+  var map = {
+    'home': '#home',
+    'workspace': '#workspace',
+    'agents': '#agents',
+    'ai-agents': '#agents',
+    'workflows': '#workflows',
+    'workflow-builder': '#workflows',
+    'workbook': '#workbook',
+    'tools': '#tools',
+    'free-tools': '#tools',
+    'pricing': '#pricing',
+    'about': '#about'
+  };
+  if (map[p]) {
+    location.replace('/' + map[p]);
+  }
+})();
+</script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Concludo">
 <meta property="og:title" content="Concludo, turn every conversation into action">
