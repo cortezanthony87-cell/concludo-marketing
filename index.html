@@ -1,5 +1,14 @@
 <!doctype html>
-<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Concludo</title>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Concludo: turn meeting transcripts into action</title>
+<meta name="description" content="Concludo turns meeting transcripts into summaries, action lists and follow-up emails you review before anything is sent. Built in Melbourne.">
+<link rel="canonical" href="https://www.concludo.au/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Concludo">
+<meta property="og:title" content="Concludo: turn meeting transcripts into action">
+<meta property="og:description" content="Turn meeting transcripts into summaries, action lists and follow-up emails you review before anything is sent.">
+<meta property="og:url" content="https://www.concludo.au/">
+<meta property="og:image" content="https://www.concludo.au/img/concludo-social-share.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -509,6 +518,12 @@ footer>.wrap{padding-block:50px}
 .center .lede{margin-inline:auto}
 .center .btns{justify-content:center}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://www.concludo.au/#org","name":"Concludo","legalName":"Concludo Pty Ltd","url":"https://www.concludo.au/","logo":"https://www.concludo.au/img/mark.webp","email":"hello@concludo.au","address":{"@type":"PostalAddress","streetAddress":"Suite 329, Level 3, 98 to 100 Elizabeth Street","addressLocality":"Melbourne","addressRegion":"VIC","postalCode":"3000","addressCountry":"AU"}},
+ {"@type":"WebSite","@id":"https://www.concludo.au/#site","url":"https://www.concludo.au/","name":"Concludo","inLanguage":"en-AU","publisher":{"@id":"https://www.concludo.au/#org"}}
+]}
+</script>
 </head><body>
 
 <header class="nav">
@@ -521,7 +536,7 @@ footer>.wrap{padding-block:50px}
       <a href="#home" data-nav="home">Home</a>
       <a href="#workspace" data-nav="workspace">Workspace</a>
       <a href="#meeting-output" data-nav="meeting-output">Meeting output</a>
-      <a href="#agents" data-nav="agents">AI agents</a>
+      <a href="#agents" data-nav="agents">Agents</a>
       <a href="#workflows" data-nav="workflows">Workflows</a>
       <a href="#workbook" data-nav="workbook">Workbook</a>
       <a href="#tools" data-nav="tools">Free tools</a>
@@ -782,8 +797,8 @@ footer>.wrap{padding-block:50px}
     <div class="wrap">
       <div class="block">
         <div class="block-txt">
-          <span class="kicker">AI agents</span>
-          <h2 style="font-size:clamp(25px,3vw,34px)">Thirteen agents that do the work around the meeting</h2>
+          <span class="kicker">Drafting agents</span>
+          <h2 style="font-size:clamp(25px,3vw,34px)">Thirteen agents that draft the work around the meeting</h2>
           <p class="muted">Each one watches something specific, prepares what it finds, and then stops. Ten propose and you decide. Three only report. None of them sends anything, and none scores, ranks or rates a person.</p>
           <ul class="checks"><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Approval first, every time. Anything that would leave Concludo waits in the Approval Centre for a person</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>Only what the record says: every item links to the meeting or line it came from</li><li><i><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></i>One switch in Governance pauses any agent, or all of them</li></ul><div class="btns" style="margin-top:26px"><a class="btn btn-line btn-sm" href="#agents" data-nav="agents">See all 13 agents</a></div>
         </div>
@@ -880,7 +895,7 @@ footer>.wrap{padding-block:50px}
         <div>
           <span class="kicker">Governance</span>
           <h2>Built so nobody has to take its word for anything</h2>
-          <p class="lede" style="margin-top:18px">Most of the risk in AI at work is not that the model gets something wrong. It is that nobody can tell when it has. Three rules hold everywhere in Concludo, and they are enforced in the software rather than described in a policy.</p>
+          <p class="lede" style="margin-top:18px">The risk with automated drafting is not only that it gets something wrong. It is that nobody can tell when it has. Three rules hold everywhere in Concludo, and they are enforced in the software rather than described in a policy.</p>
           <div class="stats">
             <div class="stat"><div class="n">13</div><div class="l">Agents</div></div>
             <div class="stat"><div class="n">1</div><div class="l">Approval gate, always</div></div>
@@ -1382,8 +1397,8 @@ footer>.wrap{padding-block:50px}
 <div class="page" id="page-agents" hidden>
   <section class="hero">
     <div class="wrap">
-      <span class="kicker">AI agents</span>
-      <h1 style="max-width:18ch">Thirteen agents that do the <span class="mark">work around the meeting</span></h1>
+      <span class="kicker">Drafting agents</span>
+      <h1 style="max-width:18ch">Thirteen agents that draft the <span class="mark">work around the meeting</span></h1>
       <p class="lede" style="margin-top:20px">Each one watches something specific, drafts what it finds, and then stops. Nothing is sent, assigned or changed until a person approves it.</p>
     </div>
   </section>
@@ -1657,9 +1672,9 @@ footer>.wrap{padding-block:50px}
       <div class="edgrid">
         <div class="edcard">
           <div class="edshots">
-            <img src="img/wb-s1.webp" alt="" width="520" height="735" loading="lazy">
-            <img src="img/wb-s2.webp" alt="" width="520" height="735" loading="lazy">
-            <img src="img/wb-s3.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-s1.webp" alt="Meeting Mastery Workbook Starter edition, preview page 1 of 3: meeting agenda template with owner and due date columns" width="520" height="735" loading="lazy">
+            <img src="img/wb-s2.webp" alt="Meeting Mastery Workbook Starter edition, preview page 2 of 3: decision log worksheet" width="520" height="735" loading="lazy">
+            <img src="img/wb-s3.webp" alt="Meeting Mastery Workbook Starter edition, preview page 3 of 3: action register template" width="520" height="735" loading="lazy">
           </div>
           <div class="edbody">
             <span class="tier">Meeting Starter Kit</span>
@@ -1672,9 +1687,9 @@ footer>.wrap{padding-block:50px}
         </div>
         <div class="edcard best">
           <div class="edshots">
-            <img src="img/wb-t1.webp" alt="" width="520" height="735" loading="lazy">
-            <img src="img/wb-t2.webp" alt="" width="520" height="735" loading="lazy">
-            <img src="img/wb-t3.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-t1.webp" alt="Meeting Mastery Workbook Standard edition, preview page 1 of 3: meeting preparation outline" width="520" height="735" loading="lazy">
+            <img src="img/wb-t2.webp" alt="Meeting Mastery Workbook Standard edition, preview page 2 of 3: multi-stakeholder follow-up template" width="520" height="735" loading="lazy">
+            <img src="img/wb-t3.webp" alt="Meeting Mastery Workbook Standard edition, preview page 3 of 3: meeting decision audit log" width="520" height="735" loading="lazy">
           </div>
           <div class="edbody">
             <span class="badge-best">The whole method</span>
@@ -1688,9 +1703,9 @@ footer>.wrap{padding-block:50px}
         </div>
         <div class="edcard">
           <div class="edshots">
-            <img src="img/wb-p1.webp" alt="" width="520" height="735" loading="lazy">
-            <img src="img/wb-p2.webp" alt="" width="520" height="735" loading="lazy">
-            <img src="img/wb-p3.webp" alt="" width="520" height="735" loading="lazy">
+            <img src="img/wb-p1.webp" alt="Meeting Mastery Workbook Pro Edition, preview page 1 of 3: organisation rollout checklist" width="520" height="735" loading="lazy">
+            <img src="img/wb-p2.webp" alt="Meeting Mastery Workbook Pro Edition, preview page 2 of 3: team meeting governance framework" width="520" height="735" loading="lazy">
+            <img src="img/wb-p3.webp" alt="Meeting Mastery Workbook Pro Edition, preview page 3 of 3: facilitator meeting debrief template" width="520" height="735" loading="lazy">
           </div>
           <div class="edbody">
             <span class="tier">Team and Practice Licences</span>
@@ -2342,7 +2357,7 @@ footer>.wrap{padding-block:50px}
         <ul>
           <li><a href="#workspace" data-nav="workspace">The Workspace</a></li>
           <li><a href="#meeting-output" data-nav="meeting-output">Meeting output</a></li>
-          <li><a href="#agents" data-nav="agents">AI agents</a></li>
+          <li><a href="#agents" data-nav="agents">Agents</a></li>
           <li><a href="#workflows" data-nav="workflows">Workflow builder</a></li>
           <li><a href="#pricing" data-nav="pricing">Pricing</a></li>
           <li><a href="mailto:hello@concludo.au?subject=Concludo%20early%20access">Register your interest</a></li>
@@ -2388,13 +2403,13 @@ footer>.wrap{padding-block:50px}
 (function(){
   var PAGES=['home','workspace','meeting-output','agents','workflows','workbook','wb-starter','wb-standard','wb-pro',
     'tools','pricing','about'];
-  var TITLES={home:'Concludo',workspace:'Concludo Workspace','meeting-output':'Concludo meeting output',agents:'Concludo AI agents',
-    workflows:'Concludo workflow builder',
-    workbook:'Meeting Mastery Workbook',
-    'wb-starter':'Meeting Starter Kit',
-    'wb-standard':'The Meeting Mastery Workbook',
-    'wb-pro':'Workbook Team and Practice Licences',
-    tools:'Concludo free tools',pricing:'Concludo pricing',about:'About Concludo'};
+  var TITLES={home:'Concludo: turn meeting transcripts into action',workspace:'Concludo Workspace: transcripts to finished work','meeting-output':'Meeting output: summary, actions, decisions',agents:'Concludo agents',
+    workflows:'Workflow builder for follow-through',
+    workbook:'Meeting Mastery Workbook: a practical method',
+    'wb-starter':'Meeting Mastery Workbook, Starter edition',
+    'wb-standard':'Meeting Mastery Workbook, Standard edition',
+    'wb-pro':'Meeting Mastery Workbook, Pro Edition',
+    tools:'Free meeting tools and checklists',pricing:'Concludo pricing',about:'About Concludo'};
 
   function show(name,push){
     if(PAGES.indexOf(name)===-1) name='home';
