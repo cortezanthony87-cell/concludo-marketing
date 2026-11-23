@@ -282,7 +282,7 @@
       }
       return pump();
     }).catch(function (e) {
-      gotError = e && e.message && e.message !== 'unavailable' && e.message.length < 300 && !/fetch|network|load/i.test(e.message) ? e.message : "Sorry, I can't answer right now. You can email the Concludo team at hello@concludo.au.";
+      gotError = e && e.message && e.message !== 'unavailable' && e.message.length < 300 && !/fetch|network|load/i.test(e.message) ? e.message : "The chat is taking a short break. Please try again in a moment, or email the Concludo team at hello@concludo.au.";
     }).then(function () {
       dots.remove();
       if (bubble) bubble.setAttribute('aria-busy', 'false');
